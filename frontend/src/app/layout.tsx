@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import "./globals.css"
+import Header from "@/components/layout/header/header";
+import Footer from "@/components/layout/footer/footer";
 
 export const metadata: Metadata = {
   title: "Le Lusso",
@@ -12,11 +15,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={``}
-      >
-        {children}
+      <body className={``}>
+        <div className="flex flex-col justify-between">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
+
     </html>
   );
 }
