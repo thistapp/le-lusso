@@ -69,3 +69,17 @@ body {
   /* transform: translate3d(0, 0.2em, 0); */
   transform: translate3d(0, 0, 0);
 }
+
+.sub-menu-div{
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s;
+  visibility: hidden;
+}
+
+.menu-title:hover + .sub-menu-div,
+.sub-menu-div:hover {
+  opacity: 1; 
+  visibility: visible;
+  transition: 0.3s;
+}
