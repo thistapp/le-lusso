@@ -18,12 +18,16 @@ const Footer = () => {
                         <div className="px-6">© 2024 Le Lusso Project All Rights Reserved</div>
                     </div>
                 </div>
-                <div className="col-span-5">
-                    <div className="flex flex-col justify-between gap-4 text-xl">
-                        <div className="w-full flex flex-wrap text-right justify-end">
-                            <span className="font-infant">23/71</span> Thung Khru ,Thung Khru Bangkok 10140
+                <div className="col-span-5 content-end">
+                    <div className="flex flex-col justify-end text-xl gap-2">
+                        <div className="w-3/12 flex flex-wrap text-right self-end">
+                            <p>
+                                <span className="font-infant">23/71</span>
+                                <span className="mx-2">Thung Khru ,Thung Khru Bangkok</span>
+                                <span className="font-infant">10140</span>
+                            </p>
                         </div>
-                        <div className="w-full flex flex-wrap justify-end gap-4">
+                        <div className="w-full flex flex-wrap justify-end gap-4 my-2">
                             <Link href={"https://www.facebook.com/profile.php?id=61565474234203"} target="_blank">
                                 <Image
                                     src={"/social/facebookIcon.png"}

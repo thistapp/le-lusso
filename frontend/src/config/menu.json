@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Services",
+        "path": "",
+        "submenu": [
+            {
+                "title": "Quotation",
+                "path": "quotation"
+            },
+            {
+                "title": "Information Design",
+                "path": "information-design"
+            },
+            {
+                "title": "After Sales Service",
+                "path": "after-sales-service"
+            }
+        ]
+    },
+    {
+        "title": "PortFolio",
+        "path": "portfolio",
+        "submenu": []
+    },
+    {
+        "title": "About us",
+        "path": "about-us",
+        "submenu": []
+    },
+    {
+        "title": "Contact us",
+        "path": "contact-us",
+        "submenu": []
+    }
+]
