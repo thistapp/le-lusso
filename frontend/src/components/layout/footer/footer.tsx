@@ -3,7 +3,8 @@ import Link from "next/link"
 
 const Footer = () => {
     return (
-        <footer className="w-full fixed bottom-0 bg-[#0D1E2F] text-[#D1C7BC] p-6">
+        <footer className="w-full  bg-[#0D1E2F] text-[#D1C7BC] p-6">
+        {/* <footer className="w-full fixed bottom-0 bg-[#0D1E2F] text-[#D1C7BC] p-6"> */}
             <div className="grid grid-cols-12">
                 <div className="col-start-2 col-span-5">
                     <div className="flex flex-col gap-4">
@@ -21,17 +22,17 @@ const Footer = () => {
                 <div className="col-span-5 content-end">
                     <div className="flex flex-col justify-end text-xl gap-2">
                         <div className="w-3/12 flex flex-wrap text-right self-end">
-                            <p>
+                            <div>
                                 <span className="font-infant">23/71</span>
                                 <span className="mx-2">Thung Khru ,Thung Khru Bangkok</span>
                                 <span className="font-infant">10140</span>
-                            </p>
+                            </div>
                         </div>
                         <div className="w-full flex flex-wrap justify-end gap-4 my-2">
                             <Link href={"https://www.facebook.com/profile.php?id=61565474234203"} target="_blank">
                                 <Image
                                     src={"/social/facebookIcon.png"}
-                                    alt=""
+                                    alt="facebook-icon"
                                     width={"35"}
                                     height={"35"}
                                 />
@@ -39,7 +40,7 @@ const Footer = () => {
                             <Link href={"https://www.instagram.com/lelusso.official/"} target="_blank">
                                 <Image
                                     src={"/social/IGIcon.png"}
-                                    alt=""
+                                    alt="ig-icon"
                                     width={"35"}
                                     height={"35"}
                                 />
@@ -47,7 +48,7 @@ const Footer = () => {
                             <Link href={"https://lin.ee/RkpqHbe"} target="_blank">
                                 <Image
                                     src={"/social/LineIcon.png"}
-                                    alt=""
+                                    alt="line-icon"
                                     width={"35"}
                                     height={"35"}
                                 />
@@ -55,7 +56,7 @@ const Footer = () => {
                             <Link href={"https://www.tiktok.com/@lelusso.project"} target="_blank">
                                 <Image
                                     src={"/social/tiktokIcon.png"}
-                                    alt=""
+                                    alt="tiktok-icon"
                                     width={"30"}
                                     height={"35"}
                                 />

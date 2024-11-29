@@ -19,7 +19,7 @@ const Header = ({ }) => {
                                     </Link>
                                 </div>
                                 {o.submenu.length > 0 &&
-                                    <div className="absolute -left-7 w-[10em] bg-[#D1C7BC] sub-menu-div p-3">
+                                    <div className="absolute -left-7 w-[10em] bg-[#D1C7BC] sub-menu-div p-3 z-10">
                                         {o.submenu.map((oo, ii) => (
                                             <div className="flex" key={ii}>
                                                 <Link className="hyper-link-header font-cormorant-bold" href={oo.path}>

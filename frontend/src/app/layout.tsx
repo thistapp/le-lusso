@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css"
+import "../../public/styles/globals.css"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Header from "@/components/layout/header/header";
 import Footer from "@/components/layout/footer/footer";
 

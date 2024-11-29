@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: "cormorant-regular";
-  src: url("../app/fonts/CormorantGaramond-Regular.ttf");
+  src: url("../fonts/CormorantGaramond-Regular.ttf");
 }
 
 @font-face {
   font-family: "cormorant-bold";
-  src: url("../app/fonts/CormorantGaramond-Bold.ttf");
+  src: url("../fonts/CormorantGaramond-Bold.ttf");
 }
 
 @font-face {
   font-family: "cormorant-infant-regular";
-  src: url("../app/fonts/cormorantInfant/CormorantInfant-Regular.ttf");
+  src: url("../fonts/cormorantInfant/CormorantInfant-Regular.ttf");
 }
 
 body {
@@ -70,16 +70,81 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-.sub-menu-div{
+.sub-menu-div {
   opacity: 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.3s;
   visibility: hidden;
 }
 
-.menu-title:hover + .sub-menu-div,
+.menu-title:hover+.sub-menu-div,
 .sub-menu-div:hover {
-  opacity: 1; 
+  opacity: 1;
   visibility: visible;
+  transition: 0.3s;
+}
+
+.le-lusso-caption{
+  /* background-image: url("");
+
+   min-height: 500px; */
+
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+.slick-slide div {
+  outline: none;
+}
+
+.portfolio-card{
+  opacity: 0;
+  transition: 0.3s;
+  background-color: #00000078;
+  border: 2px white solid;
+  z-index: 10;
+  color:white;
+}
+
+.slick-slide div:hover .portfolio-card {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.read-more{
+  position: absolute;
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.read-more:hover{
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.our-services{
+  padding: 5px;
+  color: #D1C7BC;
+  border: 2px solid #D1C7BC;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.our-services:hover{
+  color: #404145;
+  background-color: #D1C7BC;
   transition: 0.3s;
 }
