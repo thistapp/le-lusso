@@ -7,18 +7,18 @@ import Slider from "react-slick";
 
 const SlideComponent = (data: any) => {
     const settings = {
-        autoplay: true,
+        // autoplay: true,
         arrows: true,
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
     };
 
     return (
         <section>
-            <div className="">
+            <div className="new-slide">
                 <Slider {...settings}>
                     {data.slide?.map((o: any, i: number) => (
                         <div className="w-full relative" key={i}>

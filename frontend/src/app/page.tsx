@@ -6,7 +6,7 @@ import WhyUsComponent from "@/components/home/whyUsComponent";
 
 export default function Home() {
   // const router = useRouter();
-  console.log(Data)
+  // console.log(Data)
   return (
     <div className="">
       <SlideComponent slide={Data.slideData} />
