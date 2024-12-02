@@ -3,6 +3,7 @@
 
 import Image from "next/image"
 import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
 import Slider from "react-slick";
 
 const PortComponents = (port: any) => {
@@ -15,25 +16,26 @@ const PortComponents = (port: any) => {
         slidesToShow: 5,
         slidesToScroll: 1,
     };
-    console.log(port)
     return (
         <section className="flex flex-col">
             {/* <div className="le-lusso-caption"> */}
             <div className="grid grid-cols-12 ">
                 <div className="col-span-full py-8 px-4 bg-[#CDC3B8]">
-                    <div className="place-items-center">
-                        <Image
-                            src={'/logo/logo_text_black.png'}
-                            alt="logo"
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "20%", height: "auto" }}
-                        />
-                    </div>
-                    <div className="text-center">
-                        <h1 className="uppercase text-3xl">&#8220;for your space&#8221;</h1>
-                    </div>
+                    <Fade cascade>
+                        <div className="place-items-center">
+                            <Image
+                                src={'/logo/logo_text_black.png'}
+                                alt="logo"
+                                width={0}
+                                height={0}
+                                sizes="100vw"
+                                style={{ width: "20%", height: "auto" }}
+                            />
+                        </div>
+                        <div className="text-center">
+                            <h1 className="uppercase text-3xl">&#8220;for your space&#8221;</h1>
+                        </div>
+                    </Fade>
                 </div>
                 {/* </div> */}
             </div>

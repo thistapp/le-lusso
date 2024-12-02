@@ -84,30 +84,41 @@ body {
   transition: 0.3s;
 }
 
-.le-lusso-caption{
-  background-image: url("/gallery/aboutus.png");
-
-   min-height: 435px;
-
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+.nav-bar {
+  background-color: #d1c7bc;
+  transition: 0.3s;
 }
 
-.new-slide .slick-slider{
+.nav-bar.on-scroll {
+  background-color: #d1c7bc94;
+  transition: 0.3s;
+
+}
+
+.le-lusso-caption {
+  background-image: url("/gallery/aboutus.png");
+
+  min-height: 435px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.new-slide .slick-slider {
   height: 100vh !important;
 }
 
-.slick-dots{
+.slick-dots {
   bottom: 30px !important;
 }
 
-.slick-next{
+.slick-next {
   right: 30px !important;
 }
 
-.slick-prev{
+.slick-prev {
   left: 30px !important;
   z-index: 2;
 }
@@ -116,13 +127,13 @@ body {
   outline: none;
 }
 
-.portfolio-card{
+.portfolio-card {
   opacity: 0;
   transition: 0.3s;
   background-color: #00000078;
   border: 2px white solid;
   z-index: 10;
-  color:white;
+  color: white;
 }
 
 .slick-slide div:hover .portfolio-card {
@@ -130,7 +141,7 @@ body {
   transition: 0.3s;
 }
 
-.read-more{
+.read-more {
   position: absolute;
   padding: 6px;
   background-color: transparent;
@@ -144,13 +155,13 @@ body {
   transition: 0.3s;
 }
 
-.read-more:hover{
+.read-more:hover {
   background-color: white;
   color: black;
   transition: 0.3s;
 }
 
-.our-services{
+.our-services {
   padding: 7px;
   color: #D1C7BC;
   border: 1px solid #D1C7BC;
@@ -159,7 +170,7 @@ body {
   transition: 0.3s;
 }
 
-.our-services:hover{
+.our-services:hover {
   color: #404145;
   background-color: #D1C7BC;
   transition: 0.3s;
