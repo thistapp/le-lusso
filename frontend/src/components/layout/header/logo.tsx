@@ -4,13 +4,18 @@ import Link from "next/link"
 const Logo = () => {
     return (
         <>
-            <Link href={"/"}>
+            <Link href={"/"} className="absolute -top-[30px]">
                 <Image
                     src={"/logo/logo_black.png"}
                     alt=""
-                    width={"50"}
-                    height={"50"}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     className="mx-6"
+                    style={{
+                        width: "100%",
+                        height: "auto"
+                    }}
                 />
             </Link>
         </>

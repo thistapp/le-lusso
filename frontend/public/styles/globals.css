@@ -17,8 +17,13 @@
   src: url("../fonts/cormorantInfant/CormorantInfant-Regular.ttf");
 }
 
+@font-face {
+  font-family: "espoir-regular";
+  src: url("../fonts/espoir/Espoir-Serif.ttf");
+}
+
 body {
-  font-family: "cormorant-regular";
+  font-family: "espoir-regular";
 }
 
 .font-infant {

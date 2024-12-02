@@ -48,7 +48,7 @@ const PortComponents = (port: any) => {
                                     <p className="text-2xl">
                                         {o.title}
                                     </p>
-                                    <div className=" read-more">
+                                    <div className="read-more">
                                         <Link href={o.path}>
                                             view more
                                         </Link>
