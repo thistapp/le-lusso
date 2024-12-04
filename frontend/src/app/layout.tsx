@@ -17,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={``}>
+      <head>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" />
+      </head>
+      <body>
         <div className="flex flex-col justify-between">
           <Header />
           <main>{children}</main>

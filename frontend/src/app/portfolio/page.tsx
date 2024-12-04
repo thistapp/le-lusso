@@ -1,13 +1,8 @@
-"use client"
+import PortComponents from "@/components/portfolio/portComponents";
+import data from "@/config/portfolio"
 
-import React, { useState } from 'react'
-
-const page = () => {
-    const [data, setData] = useState('');
-
-    return (
-        <div>page</div>
-    )
+export default function page() {
+  return (
+    <PortComponents data={data} />
+  )
 }
-
-export default page

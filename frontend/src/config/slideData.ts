@@ -1,4 +1,4 @@
-const slideData = [
+const slideData: slideData[] = [
     {
         title: "Lorem Ipsum1",
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -27,31 +27,31 @@ const slideData = [
     },
 ];
 
-const portData = [
+const portData: portData[] = [
     {
         title: "living room",
         image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
-        path: "/portfolio"
+        path: "/portfolio?cate=living-room"
     }, {
         title: "bed room",
         image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
-        path: "/portfolio"
+        path: "/portfolio?cate=bed-room"
     }, {
         title: "bath room",
         image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
-        path: "/portfolio"
+        path: "/portfolio?cate=bath-room"
     }, {
         title: "kitchen room",
         image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
-        path: "/portfolio"
+        path: "/portfolio?cate=kitchen-room"
     }, {
         title: "space room",
         image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
-        path: "/portfolio"
+        path: "/portfolio?cate=space-room"
     },
 ];
 
-const whyUs = {
+const whyUs: whyusData = {
     title: "Why choose Le lusso?",
     desc: "Our exceptional team, comprised of experienced engineers, skilled craftsmen, and talented designers with over 40 years of expertise, ensures superior quality at every stage. From the initial design phase to on-site evaluations and client consultations, we listen attentively and tailor our services to elevate your lifestyle. Our continuous client support and robust after-sales service guarantee confidence before, during, and after project completion.\n\nExperience the art of tailored living with Le lusso\nwhere your space becomes a true reflection of your essence.",
     path: "services"

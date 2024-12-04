@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "cormorant-regular";
-  src: url("../fonts/CormorantGaramond-Regular.ttf");
+  src: url("../fonts/cormorantGaramond/CormorantGaramond-Regular.ttf");
 }
 
 @font-face {
   font-family: "cormorant-bold";
-  src: url("../fonts/CormorantGaramond-Bold.ttf");
+  src: url("../fonts/cormorantGaramond/CormorantGaramond-Bold.ttf");
 }
 
 @font-face {
@@ -22,27 +22,40 @@
   src: url("../fonts/espoir/Espoir-Serif.ttf");
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "espoir-regular";
+  @apply tracking-wider;
 }
 
 .font-infant {
   font-family: "cormorant-infant-regular";
 }
 
+.font-cormorant {
+  font-family: "cormorant-regular";
+  @apply !tracking-normal;
+}
+
 .font-cormorant-bold {
   font-family: "cormorant-bold";
+  @apply !tracking-normal;
 }
 
 .hyper-link,
-.hyper-link-header {
+.hyper-link-header,
+.port-cate {
   display: block;
   position: relative;
   padding: 0.1em 0;
   overflow: hidden;
 }
 
-.hyper-link-header::after {
+.hyper-link-header::after,
+.port-cate::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -50,9 +63,9 @@ body {
   width: 100%;
   height: 0.15em;
   background-color: #0E1D2F;
-  opacity: 1;
-  transition: opacity 300ms, transform 300ms;
-  transform: translate3d(-100%, 0, 0);
+  opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+	transform: translate3d(-100%, 0, 0);
 }
 
 .hyper-link::after {
@@ -63,15 +76,16 @@ body {
   width: 100%;
   height: 0.15em;
   background-color: #D1C7BC;
-  opacity: 1;
-  transition: opacity 300ms, transform 300ms;
-  transform: translate3d(-100%, 0, 0);
+  opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+	transform: translate3d(-100%, 0, 0);
 }
 
 .hyper-link:hover::after,
-.hyper-link-header:hover::after {
-  opacity: 1;
-  /* transform: translate3d(0, 0.2em, 0); */
+.hyper-link-header:hover::after,
+.port-cate:hover::after,
+.port-cate.active::after {
+	opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
@@ -97,9 +111,8 @@ body {
 .nav-bar.on-scroll {
   background-color: #d1c7bc94;
   transition: 0.3s;
-
 }
-
+/* 
 .le-lusso-caption {
   background-image: url("/gallery/aboutus.png");
 
@@ -109,7 +122,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .new-slide .slick-slider {
   height: 100vh !important;
@@ -132,7 +145,7 @@ body {
   outline: none;
 }
 
-.portfolio-card {
+.portfolio-card{
   opacity: 0;
   transition: 0.3s;
   background-color: #00000078;
@@ -141,7 +154,18 @@ body {
   color: white;
 }
 
-.slick-slide div:hover .portfolio-card {
+.item-card {
+  opacity: 0;
+  transition: 0.3s;
+  background-color: #00000078;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px 0 #ccc;
+  z-index: 10;
+  color: white;
+}
+
+.slick-slide div:hover .portfolio-card,
+.grid-port div:hover .item-card {
   opacity: 1;
   transition: 0.3s;
 }
@@ -179,4 +203,31 @@ body {
   color: #404145;
   background-color: #D1C7BC;
   transition: 0.3s;
+}
+
+.grid-port {
+  column-gap: 1em;
+  margin: 1.5em;
+  padding: 0;
+  column-count: 3;
+  column-gap: 1.5em;
+  font-size: .85em;
+  -webkit-column-count: 3;
+  -moz-column-count:3;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+}
+
+.grid-item{
+  display: inline-block;
+  background: #fff;
+  margin: 0 0 1.5em;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px 0 #ccc;
+  -webkit-transition:1s ease all;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }

@@ -15,7 +15,7 @@ const WhyUsComponent = (data: any) => {
                     <div className="p-12">
                         <div className="mb-12">
                             <Fade direction='left'>
-                                <h2 className='text-4xl font-cormorant-bold'>{data.data.title}</h2>
+                                <h2 className='text-4xl'>{data.data.title}</h2>
                             </Fade>
                             <Fade direction='left' delay={300} className='border border-solid border-[#D1C7BC] absolute w-[33em] left-0 mt-3'>
                                 <div className='' />

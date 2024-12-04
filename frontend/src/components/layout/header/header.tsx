@@ -8,7 +8,7 @@ import Link from "next/link"
 import { useEffect } from "react"
 
 const Header = ({ }) => {
-    
+
     useEffect(() => {
         window.onscroll = function () {
             let header: any = document.querySelector("header");
@@ -30,7 +30,7 @@ const Header = ({ }) => {
                     <div className="w-full flex flex-wrap gap-7">
                         {menu?.map((o, i) => (
                             <div className="relative" key={i}>
-                                <div className={`${o.submenu.length > 0 ? "menu-title" : "hyper-link-header"} text-2xl font-cormorant-bold`}>
+                                <div className={`${o.submenu.length > 0 ? "menu-title" : "hyper-link-header"} text-2xl font-cormorant`}>
                                     <Link href={o.path}>
                                         {o.title}
                                     </Link>
@@ -39,7 +39,7 @@ const Header = ({ }) => {
                                     <div className="absolute -left-7 w-[11em] bg-[#D1C7BC] sub-menu-div p-3 z-10">
                                         {o.submenu.map((oo, ii) => (
                                             <div className="flex" key={ii}>
-                                                <Link className="hyper-link-header font-cormorant-bold text-lg" href={oo.path}>
+                                                <Link className="hyper-link-header font-cormorant text-lg" href={oo.path}>
                                                     {oo.title}
                                                 </Link>
                                             </div>
