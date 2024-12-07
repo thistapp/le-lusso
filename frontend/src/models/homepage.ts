@@ -1,17 +1,17 @@
-interface slideData {
+export interface slideType {
     title: string,
     desc: string,
     path: string,
     image: string
 }
 
-interface portData {
+export interface portType {
     title: string,
     image: string,
     path: string,
 }
 
-interface whyusData {
+export interface whyusData {
     title: string,
     desc: string,
     path: string

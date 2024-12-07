@@ -1,16 +1,16 @@
-interface galleryData {
+export interface galleryData {
     id: number,
     image: string
 }
 
-interface dataType {
+export interface dataType {
     title: string,
     desc: string,
     cate: string,
     gallery: galleryData[]
 }
 
-interface dataCate {
+export interface dataCate {
     label: string,
     value: string
 }

@@ -1,9 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
 
 const Logo = () => {
-    
     return (
         <>
             <Link href={"/"} className="absolute -top-[30px]">

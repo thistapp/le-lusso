@@ -1,4 +1,6 @@
-const slideData: slideData[] = [
+import { slideType, portType, whyusData } from "@/models/homepage";
+
+const slideData: slideType[] = [
     {
         title: "Lorem Ipsum1",
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -27,7 +29,7 @@ const slideData: slideData[] = [
     },
 ];
 
-const portData: portData[] = [
+const portData: portType[] = [
     {
         title: "living room",
         image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
