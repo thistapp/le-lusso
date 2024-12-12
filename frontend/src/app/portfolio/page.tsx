@@ -1,4 +1,4 @@
-import PortComponents from "@/components/portfolio/portComponents";
+import PortComponents from "@/components/page/portComponents";
 import data from "@/config/portfolio"
 
 export default function page() {

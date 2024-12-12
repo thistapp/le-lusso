@@ -43,10 +43,6 @@ const PortComponents = ({ data }: any) => {
         setCate(query != undefined ? query[1] : "");
     }, [])
 
-    useEffect(() => {
-
-    }, [cate])
-
     return (
         <>
             <div className='mt-24'>
@@ -160,4 +156,4 @@ const PortComponents = ({ data }: any) => {
     )
 }
 
-export default PortComponents
+export default PortComponents;

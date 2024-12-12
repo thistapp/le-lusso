@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import '../../public/styles/globalicon.css';
 import "../../public/styles/globals.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Header from "@/components/layout/header/header";
-import Footer from "@/components/layout/footer/footer";
+import Footer from "@/components/layout/footer";
 
 export const metadata: Metadata = {
   title: "Le Lusso",
@@ -24,7 +25,7 @@ export default function RootLayout({
       <body>
         <div className="flex flex-col justify-between">
           <Header />
-          <main>{children}</main>
+          <main className="">{children}</main>
           <Footer />
         </div>
       </body>

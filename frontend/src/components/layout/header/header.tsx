@@ -4,6 +4,7 @@
 
 import Logo from "./logo"
 import menu from "../../../config/menu.json"
+import HeaderMobile from "../mobile/header"
 import Link from "next/link"
 import { useEffect } from "react"
 
@@ -21,8 +22,8 @@ const Header = ({ }) => {
     }, [])
 
     return (
-        <header className="w-full fixed nav-bar text-[#0E1D2F] p-6 z-50">
-            <div className="grid grid-cols-12">
+        <header className="w-full fixed nav-bar text-[#0E1D2F] p-2 lg:p-6 z-50">
+            <div className="hidden lg:grid grid-cols-12">
                 <div className="col-start-2 relative">
                     <Logo />
                 </div>
@@ -50,6 +51,9 @@ const Header = ({ }) => {
                         ))}
                     </div>
                 </div>
+            </div>
+            <div className="grid lg:hidden grid-cols-12">
+                <HeaderMobile />
             </div>
         </header >
     )
