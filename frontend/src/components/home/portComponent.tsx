@@ -15,6 +15,15 @@ const PortComponents = (port: any) => {
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
     return (
         <section className="flex flex-col">
@@ -33,7 +42,7 @@ const PortComponents = (port: any) => {
                             />
                         </div>
                         <div className="text-center">
-                            <h1 className="uppercase text-3xl">&#8220;for your space&#8221;</h1>
+                            <h1 className="uppercase text-lg lg:text-3xl">&#8220;for your space&#8221;</h1>
                         </div>
                     </Fade>
                 </div>
@@ -45,11 +54,11 @@ const PortComponents = (port: any) => {
                         {port.port?.map((o: any, i: number) => (
                             <div className="relative porfolio-type uppercase" key={i}>
                                 <div className="portfolio-card absolute w-full h-full z-10 content-center text-center ">
-                                    <p className="text-2xl">
+                                    <p className="text-lg lg:text-2xl">
                                         {o.title}
                                     </p>
                                     <div className="read-more">
-                                        <Link href={o.path}>
+                                        <Link href={o.path} className="text-sm lg:text-lg">
                                             view more
                                         </Link>
                                     </div>

@@ -5,7 +5,7 @@ import FooterMobile from "./mobile/footer";
 const Footer = () => {
     return (
         <>
-            <footer className="w-full fixed bottom-0 bg-[#0D1E2F] text-[#D1C7BC] p-2 lg:p-6">
+            <footer className="w-full bg-[#0D1E2F] text-[#D1C7BC] p-2 lg:p-6">
                 <div className="hidden lg:grid grid-cols-12">
                     <div className="col-start-2 col-span-5">
                         <div className="flex flex-col gap-4">

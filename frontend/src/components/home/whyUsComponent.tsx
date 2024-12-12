@@ -11,13 +11,13 @@ const WhyUsComponent = (data: any) => {
     return (
         <section className='-mt-2 !z-30 relative'>
             <div className="grid grid-cols-12 bg-[#404145] text-[#D1C7BC]">
-                <div className="col-start-2 col-span-5">
+                <div className="col-start-1 col-span-full lg:col-start-2 lg:col-span-5">
                     <div className="p-12">
                         <div className="mb-12">
                             <Fade direction='left'>
                                 <h2 className='text-4xl'>{data.data.title}</h2>
                             </Fade>
-                            <Fade direction='left' delay={300} className='border border-solid border-[#D1C7BC] absolute w-[33em] left-0 mt-3'>
+                            <Fade direction='left' delay={300} className='border border-solid border-[#D1C7BC] absolute w-[22em] lg:w-[33em] left-0 mt-3'>
                                 <div className='' />
                             </Fade>
                         </div>
@@ -33,18 +33,15 @@ const WhyUsComponent = (data: any) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-6">
-                    <Fade  >
+                <div className="col-span-full lg:col-span-6 order-first lg:order-last">
+                    <Fade>
                         <Image
                             src={"/gallery/LINE_ALBUM_ฝาก_241129_1.jpg"}
                             alt=''
                             width={0}
                             height={0}
                             sizes='100vw'
-                            style={{
-                                width: "80%",
-                                height: "auto"
-                            }}
+                            className='w-full lg:w-10/12'
                         />
                     </Fade>
                 </div>
