@@ -5,22 +5,31 @@
         "submenu": [
             {
                 "title": "Quotation",
-                "path": "quotation"
+                "path": "/quotation"
             },
             {
                 "title": "Information Design",
-                "path": "information-design"
+                "path": "/information-design"
             },
             {
                 "title": "After Sales Service",
-                "path": "after-sales-service"
+                "path": "/after-sales-service"
             }
         ]
     },
     {
         "title": "PortFolio",
         "path": "portfolio",
-        "submenu": []
+        "submenu": [
+            {
+                "title": "Construction",
+                "path": "/construction"
+            },
+            {
+                "title": "Interior",
+                "path": "/interior"
+            }
+        ]
     },
     {
         "title": "About us",

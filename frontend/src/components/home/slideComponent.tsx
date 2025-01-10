@@ -23,9 +23,9 @@ const SlideComponent = (data: any) => {
                 <Slider {...settings}>
                     {data.slide?.map((o: any, i: number) => (
                         <div className="w-full relative" key={i}>
-                                <div className="absolute top-1/2 lg:left-44 bg-[#d1c7bc] p-2 lg:p-4 rounded-md">
+                                <div className="absolute max-w-xs lg:max-w-xl top-[7.5em] lg:top-[21em] left-[3em] lg:left-44 bg-[#d1c7bc] p-2 lg:p-4 rounded-md">
                                     <h3 className='text-xl font-bold'>{o.title}</h3>
-                                    <p className='max-w-sm lg:max-w-md w-full truncate'>{o.desc}</p>
+                                    <p className=' w-full truncate'>{o.desc}</p>
                                 </div>
                             <Image
                                 src={o.image}
@@ -33,7 +33,7 @@ const SlideComponent = (data: any) => {
                                 width={0}
                                 height={0}
                                 sizes="100vw"
-                                className="w-full h-[100vh] "
+                                className="w-full h-[313px] lg:h-[100vh] "
                             />
 
                         </div>

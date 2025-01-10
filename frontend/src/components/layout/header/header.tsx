@@ -4,7 +4,7 @@
 
 import Logo from "./logo"
 import menu from "../../../config/menu.json"
-import HeaderMobile from "../mobile/header"
+import HeaderMobile from "./mobile/header"
 import Link from "next/link"
 import { useEffect } from "react"
 
@@ -31,7 +31,7 @@ const Header = ({ }) => {
                     <div className="w-full flex flex-wrap gap-7">
                         {menu?.map((o, i) => (
                             <div className="relative" key={i}>
-                                <div className={`${o.submenu.length > 0 ? "menu-title" : "hyper-link-header"} text-2xl font-cormorant`}>
+                                <div className={`${o.submenu.length > 0 ? "menu-title" : "hyper-link-header"} text-2xl`}>
                                     <Link href={o.path}>
                                         {o.title}
                                     </Link>
@@ -40,7 +40,7 @@ const Header = ({ }) => {
                                     <div className="absolute -left-7 w-[11em] bg-[#D1C7BC] sub-menu-div p-3 z-10">
                                         {o.submenu.map((oo, ii) => (
                                             <div className="flex" key={ii}>
-                                                <Link className="hyper-link-header font-cormorant text-lg" href={oo.path}>
+                                                <Link className="hyper-link-header text-lg" href={oo.path}>
                                                     {oo.title}
                                                 </Link>
                                             </div>
@@ -53,7 +53,7 @@ const Header = ({ }) => {
                 </div>
             </div>
             <div className="grid lg:hidden grid-cols-12">
-                <HeaderMobile />
+                <HeaderMobile config={menu} />
             </div>
         </header >
     )

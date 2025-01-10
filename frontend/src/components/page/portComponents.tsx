@@ -2,7 +2,7 @@
 /* eslint-disable  @typescript-eslint/no-explicit-any */
 
 import React, { useEffect, useState } from 'react';
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import Masonry from "react-responsive-masonry"
 import Modal from '../elements/modal';
 import Slider from "react-slick";
 import Image from 'next/image';
@@ -98,36 +98,6 @@ const PortComponents = ({ data }: any) => {
                             }
                         </Masonry>
                         <div className="p-3 grid-port">
-                            {/* {data.portData
-                                .filter((cate: any) => filterData(cate))
-                                .map((o: any, i: number) => (
-                                    <div
-                                        className="relative grid-item cursor-pointer"
-                                        onClick={() => openModal(o.gallery)}
-                                        key={i}
-                                    >
-                                        <div className="item-card absolute w-full h-full z-10 content-center text-center">
-                                            <h3 className='text-xl'>
-                                                {o.title}
-                                            </h3>
-                                            <p className='text-lg truncate w-5/6 mx-auto'>
-                                                {o.desc}
-                                            </p>
-                                        </div>
-                                        <Image
-                                            src={o.gallery[0].image}
-                                            alt='thumbnails'
-                                            width={0}
-                                            height={0}
-                                            sizes='100vw'
-                                            style={{
-                                                width: "100%",
-                                                height: "auto"
-                                            }}
-                                        />
-                                    </div>
-                                ))
-                            } */}
                         </div>
                     </div>
                 </div>
