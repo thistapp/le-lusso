@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   devIndicators: {
     appIsrStatus: false,
   },
+  sassOptions: {
+    implementation: 'sass-embedded',
+  },
   output: "standalone"
   /* config options here */
 };
