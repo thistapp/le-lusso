@@ -2,138 +2,144 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "cormorant-regular";
-  src: url("../fonts/cormorantGaramond/CormorantGaramond-Regular.ttf");
-}
-
-@font-face {
-  font-family: "cormorant-bold";
-  src: url("../fonts/cormorantGaramond/CormorantGaramond-Bold.ttf");
-}
-
-@font-face{
-  font-family: "poppins";
-  src: url("../fonts/poppins/Poppins-Regular.ttf")
-}
-
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "poppins";
-  @apply tracking-wider;
-}
-
-.font-cormorant {
-  font-family: "cormorant-regular";
-  @apply !tracking-normal;
-}
-
-.font-cormorant-bold {
-  font-family: "cormorant-bold";
-  @apply !tracking-normal;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hyper-link,
 .hyper-link-header,
 .port-cate {
-  display: block;
-  position: relative;
-  padding: 0.1em 0;
-  overflow: hidden;
+    display: block;
+    position: relative;
+    padding: 0.1em 0;
+    overflow: hidden;
 }
 
 .hyper-link-header::after,
 .port-cate::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.15em;
-  background-color: #0E1D2F;
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-  transform: translate3d(-100%, 0, 0);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.15em;
+    background-color: #714e39;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    transform: translate3d(-100%, 0, 0);
 }
 
 .hyper-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.15em;
-  background-color: #D1C7BC;
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-  transform: translate3d(-100%, 0, 0);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.15em;
+    background-color: #d1c7bc;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    transform: translate3d(-100%, 0, 0);
 }
 
 .hyper-link:hover::after,
 .hyper-link-header:hover::after,
 .port-cate:hover::after,
 .port-cate.active::after {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
 
 .sub-menu-div {
-  opacity: 0;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: 0.3s;
-  visibility: hidden;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+    visibility: hidden;
 }
 
-.menu-title:hover+.sub-menu-div,
+.menu-title:hover + .sub-menu-div,
 .sub-menu-div:hover {
-  opacity: 1;
-  visibility: visible;
-  transition: 0.3s;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
 }
 
 .nav-bar {
-  background-color: #d1c7bc;
-  transition: 0.3s;
+    background-color: #d1c7bc;
+    transition: 0.3s;
 }
 
 .nav-bar.on-scroll {
-  background-color: #d1c7bc94;
-  transition: 0.3s;
+    background-color: #d1c7bc94;
+    transition: 0.3s;
 }
 
 .open-mobile {
-  opacity: 1;
-  transition: 0.3s;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .close-mobile {
-  opacity: 0;
-  transform: rotate(90deg);
-  transition: 0.3s;
+    opacity: 0;
+    transform: rotate(90deg);
+    transition: 0.3s;
 }
 
 .nav-mobile {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-y: hidden;
-  transition: 0.5s;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
 }
 
 .nav-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.open-mobile {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.close-mobile {
+    opacity: 0;
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+.nav-mobile {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.nav-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* 
@@ -149,194 +155,194 @@ body {
 } */
 
 .new-slide .slick-slider {
-  height: 100vh !important;
+    height: 100vh !important;
 }
 
 .slick-dots {
-  bottom: 30px !important;
+    bottom: 30px !important;
 }
 
 .slick-next {
-  right: 30px !important;
+    right: 30px !important;
 }
 
 .slick-prev {
-  left: 30px !important;
-  z-index: 2;
+    left: 30px !important;
+    z-index: 2;
 }
 
 .slick-slide div {
-  outline: none;
+    outline: none;
 }
 
 .portfolio-card {
-  opacity: 0;
-  transition: 0.3s;
-  background-color: #00000078;
-  border: 2px white solid;
-  z-index: 10;
-  color: white;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: #00000078;
+    border: 2px white solid;
+    z-index: 10;
+    color: white;
 }
 
 .item-card {
-  opacity: 0;
-  transition: 0.3s;
-  background-color: #00000078;
-  box-sizing: border-box;
-  box-shadow: 2px 2px 4px 0 #ccc;
-  z-index: 10;
-  color: white;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: #00000078;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+    z-index: 10;
+    color: white;
 }
 
 .slick-slide div:hover .portfolio-card,
 .grid-port div:hover .item-card {
-  opacity: 1;
-  transition: 0.3s;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .read-more {
-  position: absolute;
-  padding: 6px;
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  border-radius: 6px;
-  cursor: pointer;
-  left: 50%;
-  bottom: 20px;
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
+    position: absolute;
+    padding: 6px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
 }
 
 .read-more:hover {
-  background-color: white;
-  color: black;
-  transition: 0.3s;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
 }
 
 .our-services {
-  padding: 7px;
-  color: #D1C7BC;
-  border: 1px solid #D1C7BC;
-  background-color: transparent;
-  border-radius: 6px;
-  transition: 0.3s;
+    padding: 7px;
+    color: #d1c7bc;
+    border: 1px solid #d1c7bc;
+    background-color: transparent;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
 .our-services:hover {
-  color: #404145;
-  background-color: #D1C7BC;
-  transition: 0.3s;
+    color: #404145;
+    background-color: #d1c7bc;
+    transition: 0.3s;
 }
 
 .grid-port {
-  column-gap: 1em;
-  margin: 1.5em;
-  padding: 0;
-  column-count: 3;
-  column-gap: 1.5em;
-  font-size: .85em;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  -moz-column-gap: 1.5em;
-  -webkit-column-gap: 1.5em;
+    column-gap: 1em;
+    margin: 1.5em;
+    padding: 0;
+    column-count: 3;
+    column-gap: 1.5em;
+    font-size: 0.85em;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
 }
 
 .grid-item {
-  display: inline-block;
-  background: #fff;
-  margin: 0 0 1.5em;
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: 2px 2px 4px 0 #ccc;
-  -webkit-transition: 1s ease all;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+    display: inline-block;
+    background: #fff;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+    -webkit-transition: 1s ease all;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .modal-overlay {
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal {
-  max-width: 65%;
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
+    max-width: 65%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
 }
 
 .show-modal {
-  opacity: 1;
-  animation: show 0.3s;
+    opacity: 1;
+    animation: show 0.3s;
 }
 
 @keyframes show {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
 
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .hide-modal {
-  opacity: 0;
-  animation: hide 0.3s
+    opacity: 0;
+    animation: hide 0.3s;
 }
 
 @keyframes hide {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
 
-  to {
-    opacity: 0;
-    transform: scale(0);
-  }
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
 }
 
 .close-button {
-  position: absolute;
-  z-index: 999;
-  top: -5px;
-  right: 5px;
-  font-size: 24px;
-  background: transparent;
-  color: black;
-  border: transparent;
-  cursor: pointer;
+    position: absolute;
+    z-index: 999;
+    top: -5px;
+    right: 5px;
+    font-size: 24px;
+    background: transparent;
+    color: black;
+    border: transparent;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
-  .read-more {
-    padding: 4px;
-    transition: 0.3s;
-  }
+    .read-more {
+        padding: 4px;
+        transition: 0.3s;
+    }
 
-  .new-slide .slick-slider {
-    height: 310px !important;
-  }
+    .new-slide .slick-slider {
+        height: 310px !important;
+    }
 
-  .slick-dots {
-    bottom: 10px !important;
-  }
+    .slick-dots {
+        bottom: 10px !important;
+    }
 }

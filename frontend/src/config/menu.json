@@ -1,44 +1,80 @@
 [
     {
-        "title": "Services",
-        "path": "#",
-        "submenu": [
-            {
-                "title": "Quotation",
-                "path": "/quotation"
-            },
-            {
-                "title": "Information Design",
-                "path": "/information-design"
-            },
-            {
-                "title": "After Sales Service",
-                "path": "/after-sales-service"
-            }
-        ]
-    },
-    {
-        "title": "PortFolio",
-        "path": "portfolio",
-        "submenu": [
-            {
-                "title": "Construction",
-                "path": "/construction"
-            },
-            {
-                "title": "Interior",
-                "path": "/interior"
-            }
-        ]
-    },
-    {
-        "title": "About us",
-        "path": "about-us",
+        "title": "services",
+        "path": "/services",
         "submenu": []
     },
     {
-        "title": "Contact us",
-        "path": "contact-us",
+        "title": "construction",
+        "path": "/construction",
+        "submenu": [
+            {
+                "title": "renovation",
+                "path": "/construction?type=renovation"
+            },
+            {
+                "title": "build in",
+                "path": "/construction?type=build-in"
+            },
+            {
+                "title": "partitioning",
+                "path": "/construction?type=partitioning"
+            },
+            {
+                "title": "painting",
+                "path": "/construction?type=painting"
+            },
+            {
+                "title": "ceiling",
+                "path": "/construction?type=ceiling"
+            },
+            {
+                "title": "glass",
+                "path": "/construction?type=glass"
+            },
+            {
+                "title": "stainless steel",
+                "path": "/construction?type=stainless-steel"
+            },
+            {
+                "title": "structure demolition",
+                "path": "/construction?type=structure-demolition"
+            },
+            {
+                "title": "repair and maintenance",
+                "path": "/construction?type=repair-and-maintenance"
+            },
+            {
+                "title": "flooring and tiling",
+                "path": "/construction?type=flooring-and-tiling"
+            }
+        ]
+    },
+    {
+        "title": "portFolio",
+        "path": "/portfolio",
+        "submenu": [
+            {
+                "title": "condominium",
+                "path": "/portfolio?type=condominium"
+            },
+            {
+                "title": "house",
+                "path": "/portfolio?type=house"
+            },
+            {
+                "title": "commercial building",
+                "path": "/portfolio?type=commercial-building"
+            },
+            {
+                "title": "office",
+                "path": "/portfolio?type=office"
+            }
+        ]
+    },
+    {
+        "title": "contact us",
+        "path": "/contact-us",
         "submenu": []
     }
 ]

@@ -36,30 +36,25 @@ const slideData: dataSlideType[] = [
 
 const portData: dataSlideType[] = [
   {
-    title: "living room",
+    title: "condominium",
     image: "/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg",
-    path: "/portfolio?cate=living-room",
+    path: "/portfolio?type=condominium",
   },
   {
-    title: "bed room",
+    title: "house",
     image: "/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg",
-    path: "/portfolio?cate=bed-room",
+    path: "/portfolio?type=house",
   },
   {
-    title: "bath room",
+    title: "commercial building",
     image: "/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg",
-    path: "/portfolio?cate=bath-room",
+    path: "/portfolio?type=commercial-building",
   },
   {
-    title: "kitchen room",
+    title: "office",
     image: "/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg",
-    path: "/portfolio?cate=kitchen-room",
-  },
-  {
-    title: "space room",
-    image: "/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg",
-    path: "/portfolio?cate=space-room",
-  },
+    path: "/portfolio?type=office",
+  }
 ];
 
 const whyUs: whyusData = {

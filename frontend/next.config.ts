@@ -7,7 +7,8 @@ const nextConfig: NextConfig = {
   sassOptions: {
     implementation: 'sass-embedded',
   },
-  output: "standalone"
+  output: "standalone",
+  reactStrictMode: true
   /* config options here */
 };
 
