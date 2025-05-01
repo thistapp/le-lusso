@@ -4,7 +4,7 @@ import Link from 'next/link'
 const FooterMobile = () => {
     return (
         <div className="col-span-full self-center text-center">
-            <div className="place-items-center">
+            <div className="flex justify-center">
                 <Image
                     src={'/logo/logo_text_white.png'}
                     alt="logo"

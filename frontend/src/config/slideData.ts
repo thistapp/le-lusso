@@ -29,28 +29,27 @@ const slideData: slideType[] = [
     },
 ];
 
-const portData: portType[] = [
-    {
-        title: "living room",
-        image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
-        path: "/portfolio?cate=living-room"
-    }, {
-        title: "bed room",
-        image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
-        path: "/portfolio?cate=bed-room"
-    }, {
-        title: "bath room",
-        image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
-        path: "/portfolio?cate=bath-room"
-    }, {
-        title: "kitchen room",
-        image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
-        path: "/portfolio?cate=kitchen-room"
-    }, {
-        title: "space room",
-        image: "/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg",
-        path: "/portfolio?cate=space-room"
-    },
+const portData: dataSlideType[] = [
+  {
+    title: "condominium",
+    image: "/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg",
+    path: "/portfolio?type=condominium",
+  },
+  {
+    title: "house",
+    image: "/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg",
+    path: "/portfolio?type=house",
+  },
+  {
+    title: "commercial building",
+    image: "/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg",
+    path: "/portfolio?type=commercial-building",
+  },
+  {
+    title: "office",
+    image: "/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg",
+    path: "/portfolio?type=office",
+  }
 ];
 
 const whyUs: whyusData = {
