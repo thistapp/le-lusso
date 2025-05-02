@@ -1,7 +1,5 @@
-import ContactComponent from "@/components/page/contactComponents"
+import ContactComponent from '@/app/contact-us/components/contactComponents'
 
 export default function page() {
-  return (
-    <ContactComponent />
-  )
+    return <ContactComponent />
 }
