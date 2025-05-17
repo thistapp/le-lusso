@@ -291,6 +291,11 @@ body {
     animation: show 0.3s;
 }
 
+.slide-services-container .slick-prev:before,
+.slide-services-container .slick-next:before {
+    color: #714d39;
+}
+
 @keyframes show {
     from {
         opacity: 0;
