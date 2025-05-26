@@ -11,9 +11,9 @@ import ServicesProjectComponent from './servicesProjectComponent'
 
 const ServicesComponent = () => {
     return (
-        <div className="mt-28">
+        <div className="mt-20 lg:mt-28">
             <div className="w-full flex flex-col items-center justify-center ">
-                <h1 className="text-5xl font-bold text-center uppercase underline">
+                <h1 className="text-2xl lg:text-5xl font-bold text-center uppercase underline">
                     services
                 </h1>
                 <ServicesSesstion data={servicesData} />

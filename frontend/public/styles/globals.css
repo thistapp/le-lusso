@@ -296,6 +296,16 @@ body {
     color: #714d39;
 }
 
+.view-more-icon {
+    transition: 0.3s;
+    /* transform: translateX(-5px); */
+}
+
+.view-more:hover > .view-more-icon {
+    transition: 0.3s;
+    transform: translateX(5px);
+}
+
 @keyframes show {
     from {
         opacity: 0;

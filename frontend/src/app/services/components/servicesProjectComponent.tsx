@@ -21,6 +21,7 @@ const CustomArrow = (props: any) => {
             }}
             onClick={onClick}
         >
+            test arrow
             {/* <IconSlideArrow /> */}
         </div>
     )
@@ -59,10 +60,15 @@ const ServicesProjectComponent: React.FC<Props> = ({ data }) => {
                                             i + 1 === r.length
                                                 ? ' justify-between px-5 w-[380px]'
                                                 : ' justify-end pr-5 w-[300px]'
-                                        } text-2xl font-bold uppercase bg-[#29365F] text-white min-h-[517px] flex flex-wrap `}
+                                        } text-2xl font-bold uppercase bg-[#29365F] text-white min-h-[517px] flex `}
                                     >
-                                        <p className="h-full my-auto">
-                                            {o.title}
+                                        <p className="h-full my-auto flex flex-wrap gap-2 cursor-pointer view-more">
+                                            <span className="flex my-auto">
+                                                {o.title}
+                                            </span>{' '}
+                                            {i + 1 === r.length && (
+                                                <IconSlideArrow className="my-auto view-more-icon" />
+                                            )}
                                         </p>
                                     </div>
                                 )}

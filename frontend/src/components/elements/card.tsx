@@ -13,7 +13,7 @@ interface Props {
 
 const CardComponent: React.FC<Props> = ({ ...props }) => {
     return (
-        <div className="w-[350px] h-[500px] border-2 border-[#714E39] rounded-lg bg-[#CDC3B8] flex flex-col justify-between mx-auto">
+        <div className="w-72 h-[500px] border-2 border-[#714E39] rounded-lg bg-[#CDC3B8] flex flex-col justify-between mx-auto">
             <div className="w-full ">
                 {props.image && (
                     <Image
