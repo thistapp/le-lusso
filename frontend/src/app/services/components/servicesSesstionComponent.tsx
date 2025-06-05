@@ -58,7 +58,10 @@ const ServicesSesstion: React.FC<Props> = ({ ...props }) => {
         ],
     }
     return (
-        <div className="w-full my-12 slide-services-container">
+        <div className="w-full my-6 lg:my-12 slide-services-container">
+            <h1 className="text-2xl lg:text-5xl font-bold text-center uppercase underline  mb-4">
+                services
+            </h1>
             <Slider {...settingSlide}>
                 {props.data.map((o, i) => (
                     <CardComponent

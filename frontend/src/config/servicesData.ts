@@ -27,34 +27,29 @@ export const servicesData: ServiceCardType[] = [
 
 export const servicesStepData: ServiceStepType[] = [
     {
-        title: 'บริการที่ตอบโจทย์ทุกความต้องการ',
-        desc: 'เราพร้อมให้บริการอย่างมืออาชีพ ด้วยความเข้าใจในทุกความต้องการของลูกค้า ไม่ว่าจะเป็นการออกแบบระบบ การพัฒนาฟีเจอร์เฉพาะ หรือการดูแลหลังการใช้งาน ทีมงานของเรามีประสบการณ์และความเชี่ยวชาญที่จะช่วยผลักดันธุรกิจของคุณให้เติบโตอย่างมั่นคง\nบริการของเราเน้นความยืดหยุ่น ความปลอดภัย และความคุ้มค่าในทุกขั้นตอน เราเชื่อว่าการสื่อสารที่ชัดเจน การใส่ใจในรายละเอียด และความร่วมมือที่ดีคือกุญแจสู่ความสำเร็จที่ยั่งยืน',
-        image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_4.jpg',
+        title: 'Consult & Site Visit',
+        desc: 'นัดพบ / วัดพื้นที่จริง เพื่อเก็บข้อมูล ไลฟ์สไตล์ และงบประมาณ',
+        image: '/gallery/servicesPage/step/services_step_1.jpeg',
     },
     {
-        title: 'Reliable Services You Can Trust',
-        desc: 'We are committed to delivering professional services tailored to your unique needs. Whether it’s system design, custom feature development, or ongoing support, our experienced team is here to help your business grow with confidence and clarity.\nOur approach focuses on flexibility, security, and real value at every step. We believe that clear communication, attention to detail, and strong collaboration are the keys to building lasting success.',
-        image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_5.jpg',
+        title: 'Design Presentation',
+        desc: 'ส่งแบบ Moodboard, Layout และ 3D Perspective เพื่อเลือกวัสดุ + บรรยากาศ',
+        image: '/gallery/servicesPage/step/services_step_2.JPG',
     },
     {
-        title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum',
-        image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_6.jpg',
+        title: 'Estimate & BOQ',
+        desc: 'สรุปราคาและรายการวัสดุ (BOQ) แบบโปร่งใส พร้อมปรับตามงบได้',
+        image: '/gallery/servicesPage/step/services_step_3.png',
     },
     {
-        title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum',
-        image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_7.jpg',
+        title: 'Construction Begins',
+        desc: 'เริ่มก่อสร้าง พร้อมการอัปเดตผ่านระบบติดตามหน้างาน',
+        image: '/gallery/servicesPage/step/services_step_4.jpeg',
     },
     {
-        title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum',
-        image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_8.jpg',
-    },
-    {
-        title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum',
-        image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_9.jpg',
+        title: 'Handover & Styling',
+        desc: 'ส่งมอบงานพร้อมสไตลิ่ง และตรวจเช็คคุณภาพก่อนเข้าอยู่',
+        image: '/gallery/servicesPage/step/services_step_5.png',
     },
 ]
 

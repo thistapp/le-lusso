@@ -306,6 +306,16 @@ body {
     transform: translateX(5px);
 }
 
+.display-mobile {
+    position: fixed;
+}
+
+.section-step-image {
+    position: sticky;
+    top: 0px;
+    max-height: calc(50vh - 0px);
+}
+
 @keyframes show {
     from {
         opacity: 0;
