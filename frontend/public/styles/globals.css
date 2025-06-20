@@ -11,16 +11,14 @@ body {
 }
 
 .hyper-link,
-.hyper-link-header,
-.port-cate {
+.hyper-link-header {
     display: block;
     position: relative;
     padding: 0.1em 0;
     overflow: hidden;
 }
 
-.hyper-link-header::after,
-.port-cate::after {
+.hyper-link-header::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -47,9 +45,7 @@ body {
 }
 
 .hyper-link:hover::after,
-.hyper-link-header:hover::after,
-.port-cate:hover::after,
-.port-cate.active::after {
+.hyper-link-header:hover::after {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
@@ -194,8 +190,20 @@ body {
     color: white;
 }
 
+.port-cate {
+    color: #8b8b8b;
+    transition: 0.3s;
+}
+
+.port-cate:hover,
+.port-cate.active {
+    color: #000000;
+    transition: 0.3s;
+}
+
 .slick-slide div:hover .portfolio-card,
-.grid-port div:hover .item-card {
+.grid-port div:hover,
+.item-card:hover {
     opacity: 1;
     transition: 0.3s;
 }
