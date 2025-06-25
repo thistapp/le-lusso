@@ -324,6 +324,11 @@ body {
     max-height: calc(50vh - 0px);
 }
 
+.gallery-slider .slick-list .slick-track {
+    display: flex;
+    align-items: center;
+}
+
 @keyframes show {
     from {
         opacity: 0;
@@ -360,7 +365,7 @@ body {
     right: 5px;
     font-size: 24px;
     background: transparent;
-    color: black;
+    color: white;
     border: transparent;
     cursor: pointer;
 }

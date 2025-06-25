@@ -3,26 +3,23 @@
 
 import React, { useEffect, useState } from 'react'
 import { PortContext } from '../Utils/portfolioContext'
-import Modal from '../../../components/elements/modal'
-import Slider from 'react-slick'
-import Image from 'next/image'
 import CategoryComponents from './categoryComponents'
 import GalleryComponent from './galleryComponents'
 
 const PortComponents = ({ data }: any) => {
     const [cate, setCate] = useState('')
     const [open, setOpen] = useState(false)
-    const [galleryIMG, setGalleryIMG] = useState<any>()
+    // const [galleryIMG, setGalleryIMG] = useState<any>()
 
-    const settings = {
-        autoplay: false,
-        arrows: true,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    }
+    // const settings = {
+    //     autoplay: false,
+    //     arrows: true,
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    // }
 
     useEffect(() => {
         if (window.location.search) {
@@ -38,11 +35,11 @@ const PortComponents = ({ data }: any) => {
                 setIsCate: setCate,
                 isOpen: open,
                 setIsOpen: setOpen,
-                setIsGalleryIMG: setGalleryIMG,
+                // setIsGalleryIMG: setGalleryIMG,
             }}
         >
             <div className="mt-24">
-                <div className="grid grid-cols-12">
+                <div className="max-w-6xl mx-auto grid grid-cols-12">
                     <div className="col-span-12">
                         <h1 className="text-3xl text-center uppercase font-bold">
                             PortFolio
@@ -53,7 +50,7 @@ const PortComponents = ({ data }: any) => {
                     </div>
                 </div>
             </div>
-            {open && (
+            {/* {open && (
                 <Modal show={open} onAction={() => setOpen(!open)}>
                     <Slider {...settings} className="">
                         {galleryIMG?.map((o: any, i: number) => (
@@ -73,7 +70,7 @@ const PortComponents = ({ data }: any) => {
                         ))}
                     </Slider>
                 </Modal>
-            )}
+            )} */}
         </PortContext.Provider>
     )
 }

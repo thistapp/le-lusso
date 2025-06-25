@@ -1,54 +1,11 @@
-import { dataCate, dataType } from '@/models/portfolio'
+import { projectType } from '@/models/portfolio'
 
-const portCategory: dataCate[] = [
-    { label: 'all', value: '' },
-    {
-        label: 'condo',
-        value: 'condo',
-    },
-    {
-        label: 'home',
-        value: 'home',
-    },
-    {
-        label: 'commercial design',
-        value: 'commercial-design',
-    },
-    {
-        label: 'townhouse',
-        value: 'townhouse',
-    },
-    {
-        label: 'office',
-        value: 'office',
-    },
-    // { label: 'all', value: '' },
-    // {
-    //     label: 'bath room',
-    //     value: 'bath-room',
-    // },
-    // {
-    //     label: 'bed room',
-    //     value: 'bed-room',
-    // },
-    // {
-    //     label: 'kitchen room',
-    //     value: 'kitchen-room',
-    // },
-    // {
-    //     label: 'living room',
-    //     value: 'living-room',
-    // },
-    // {
-    //     label: 'space room',
-    //     value: 'space-room',
-    // },
-]
-
-const portData: dataType[] = [
+const projectData: projectType[] = [
     {
         title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        titleDesc: 'Lorem Ipsum1',
+        desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         cate: ['townhouse'],
         gallery: [
             {
@@ -84,11 +41,13 @@ const portData: dataType[] = [
                 image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_8.jpg',
             },
         ],
-        url: 'project/lorem-ipsum1',
+        id: 'lorem-ipsum1',
     },
     {
         title: 'Lorem Ipsum2',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        titleDesc: 'Lorem Ipsum2',
+        desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         cate: ['condo'],
         gallery: [
             {
@@ -124,11 +83,13 @@ const portData: dataType[] = [
                 image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_16.jpg',
             },
         ],
-        url: 'project/lorem-ipsum2',
+        id: 'lorem-ipsum2',
     },
     {
         title: 'Lorem Ipsum3',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        titleDesc: 'Lorem Ipsum3',
+        desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         cate: ['office', 'commercial-design', 'office'],
         gallery: [
             {
@@ -148,11 +109,13 @@ const portData: dataType[] = [
                 image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_20.jpg',
             },
         ],
-        url: 'project/lorem-ipsum3',
+        id: 'lorem-ipsum3',
     },
     {
         title: 'Lorem Ipsum4',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        titleDesc: 'Lorem Ipsum4',
+        desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         cate: ['kitchen-room'],
         gallery: [
             {
@@ -188,11 +151,13 @@ const portData: dataType[] = [
                 image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_6.jpg',
             },
         ],
-        url: 'project/lorem-ipsum4',
+        id: 'lorem-ipsum4',
     },
     {
         title: 'Lorem Ipsum5',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        titleDesc: 'Lorem Ipsum5',
+        desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         cate: ['home', 'office'],
         gallery: [
             {
@@ -228,11 +193,13 @@ const portData: dataType[] = [
                 image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_14.jpg',
             },
         ],
-        url: 'project/lorem-ipsum5',
+        id: 'lorem-ipsum5',
     },
     {
         title: 'Lorem Ipsum6',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        titleDesc: 'Lorem Ipsum6',
+        desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         cate: ['office'],
         gallery: [
             {
@@ -268,11 +235,13 @@ const portData: dataType[] = [
                 image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_22.jpg',
             },
         ],
-        url: 'project/lorem-ipsum6',
+        id: 'lorem-ipsum6',
     },
     {
         title: 'Lorem Ipsum7',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        titleDesc: 'Lorem Ipsum7',
+        desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         cate: ['townhouse', 'commercial-design'],
         gallery: [
             {
@@ -296,13 +265,8 @@ const portData: dataType[] = [
                 image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_27.jpg',
             },
         ],
-        url: 'project/lorem-ipsum7',
+        id: 'lorem-ipsum7',
     },
 ]
 
-const exportedObject = {
-    portData,
-    portCategory,
-}
-
-export default exportedObject
+export default projectData

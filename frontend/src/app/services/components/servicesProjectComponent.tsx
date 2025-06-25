@@ -21,7 +21,6 @@ const CustomArrow = (props: any) => {
             }}
             onClick={onClick}
         >
-            test arrow
             {/* <IconSlideArrow /> */}
         </div>
     )

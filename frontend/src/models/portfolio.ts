@@ -1,16 +1,51 @@
-export interface galleryData {
-    id: number,
+export class galleryData {
+    id: number
     image: string
+    constructor(data: any) {
+        this.id = data?.id || null
+        this.image = data?.image || ''
+    }
 }
 
-export interface dataType {
-    title: string,
-    desc: string,
-    cate: string,
+export class dataType {
+    title: string
+    desc: string
+    cate: string[]
     gallery: galleryData[]
+    url: string
+    constructor(data: any) {
+        this.title = data?.title || ''
+        this.desc = data?.desc || ''
+        this.cate = data?.cate || []
+        this.gallery = data?.gallery || []
+        this.url = data?.url || ''
+    }
 }
 
-export interface dataCate {
-    label: string,
+export class projectType {
+    id: string
+    title: string
+    titleDesc: string
+    desc1: string
+    desc2: string
+    cate: string[]
+    gallery: galleryData[]
+    constructor(data: any) {
+        this.title = data?.title || ''
+        this.titleDesc = data?.titleDesc || ''
+        this.desc1 = data?.desc1 || ''
+        this.desc2 = data?.desc2 || ''
+        this.cate = data?.cate || []
+        this.gallery = data?.gallery || []
+        this.id = data?.id || ''
+    }
+}
+
+export class dataCate {
+    label: string
     value: string
+    constructor(data: any) {
+        this.label = data?.label || ''
+        this.value = data?.value || ''
+    }
 }
