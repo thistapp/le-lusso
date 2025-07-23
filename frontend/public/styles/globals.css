@@ -329,6 +329,28 @@ body {
     align-items: center;
 }
 
+.title-section-part-construction {
+    background-image: linear-gradient(
+            rgba(223, 217, 202, 0.7),
+            rgba(223, 217, 202, 0.7)
+        ),
+        url('/gallery/servicesPage/ananda_Floor1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* .icon-part:hover ~ .icon-part-title,
+.icon-part-title-active {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.icon-part-title {
+    opacity: 0;
+    transition: 0.3s;
+} */
+
 @keyframes show {
     from {
         opacity: 0;

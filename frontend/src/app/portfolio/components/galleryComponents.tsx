@@ -1,15 +1,14 @@
-import { PortContext } from '../Utils/portfolioContext'
-import { useContext } from 'react'
-import Masonry from 'react-responsive-masonry'
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import CardGalleryComponents from './cardGalleryComponents'
+import { GalleryInterface } from '@/models/gallery/gallery'
 
-const GalleryComponent = ({ data }: any) => {
-    const context = useContext(PortContext)
-    if (!context) {
-        throw new Error('PortContext must be used within a PortProvider')
-    }
-    const { isCate } = context
-
+const GalleryComponent = ({
+    data,
+    isCate,
+}: {
+    data: GalleryInterface[]
+    isCate: string
+}) => {
     const filterData = (value: any) => {
         if (!isCate) {
             return true
@@ -18,15 +17,20 @@ const GalleryComponent = ({ data }: any) => {
     }
 
     return (
-        <Masonry columnsCount={3} gutter="10px" className="px-6">
-            {data.portData
-                .filter((cate: any) => filterData(cate.cate))
-                .map((o: any, i: number) => (
-                    <div className="relative grid-item cursor-pointer" key={i}>
-                        <CardGalleryComponents data={o} />
-                    </div>
-                ))}
-        </Masonry>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+            <Masonry columnsCount={3} gutter="10px" className="px-6">
+                {data
+                    .filter((cate: any) => filterData(cate.cate))
+                    .map((o: any, i: number) => (
+                        <div
+                            className="relative grid-item cursor-pointer"
+                            key={i}
+                        >
+                            <CardGalleryComponents data={o} />
+                        </div>
+                    ))}
+            </Masonry>
+        </ResponsiveMasonry>
     )
 }
 

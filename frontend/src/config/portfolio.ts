@@ -1,4 +1,5 @@
-import { dataCate, dataType } from '@/models/portfolio'
+import { GalleryInterface } from '@/models/gallery/gallery'
+import { dataCate } from '@/models/portfolio'
 
 const portCategory: dataCate[] = [
     { label: 'all', value: '' },
@@ -45,7 +46,7 @@ const portCategory: dataCate[] = [
     // },
 ]
 
-const portData: dataType[] = [
+const portData: GalleryInterface[] = [
     {
         title: 'Lorem Ipsum1',
         desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',

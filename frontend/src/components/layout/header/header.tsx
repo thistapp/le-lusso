@@ -7,8 +7,11 @@ import menu from '../../../config/menu.json'
 import HeaderMobile from './mobile/header'
 import Link from 'next/link'
 import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 const Header = ({}) => {
+    const pathname = usePathname()
+
     useEffect(() => {
         window.onscroll = function () {
             let header: any = document.querySelector('header')
@@ -17,6 +20,9 @@ const Header = ({}) => {
             } else {
                 header.classList.remove('on-scroll')
             }
+        }
+        if (pathname.split('/')[1] === 'about') {
+            window.location.href = '/about-us'
         }
     }, [])
 

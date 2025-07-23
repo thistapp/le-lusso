@@ -7,21 +7,6 @@ export class galleryData {
     }
 }
 
-export class dataType {
-    title: string
-    desc: string
-    cate: string[]
-    gallery: galleryData[]
-    url: string
-    constructor(data: any) {
-        this.title = data?.title || ''
-        this.desc = data?.desc || ''
-        this.cate = data?.cate || []
-        this.gallery = data?.gallery || []
-        this.url = data?.url || ''
-    }
-}
-
 export class projectType {
     id: string
     title: string
