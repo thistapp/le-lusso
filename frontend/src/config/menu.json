@@ -73,8 +73,8 @@
         ]
     },
     {
-        "title": "contact us",
-        "path": "/contact-us",
+        "title": "about us",
+        "path": "/about-us",
         "submenu": []
     }
 ]

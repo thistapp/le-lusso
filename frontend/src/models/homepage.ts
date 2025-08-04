@@ -1,5 +1,5 @@
 export interface whyusData {
-    title: string,
-    desc: string,
+    title: string
+    desc: string
     path: string
 }

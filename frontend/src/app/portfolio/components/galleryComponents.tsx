@@ -1,4 +1,5 @@
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+'use client'
+
 import CardGalleryComponents from './cardGalleryComponents'
 import { GalleryInterface } from '@/models/gallery/gallery'
 
@@ -17,20 +18,15 @@ const GalleryComponent = ({
     }
 
     return (
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-            <Masonry columnsCount={3} gutter="10px" className="px-6">
-                {data
-                    .filter((cate: any) => filterData(cate.cate))
-                    .map((o: any, i: number) => (
-                        <div
-                            className="relative grid-item cursor-pointer"
-                            key={i}
-                        >
-                            <CardGalleryComponents data={o} />
-                        </div>
-                    ))}
-            </Masonry>
-        </ResponsiveMasonry>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {data
+                .filter((cate: any) => filterData(cate.cate))
+                .map((o: any, i: number) => (
+                    <div className="group cursor-pointer" key={i}>
+                        <CardGalleryComponents data={o} />
+                    </div>
+                ))}
+        </div>
     )
 }
 
