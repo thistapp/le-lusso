@@ -3,7 +3,7 @@
 import { ServiceProjectType } from '@/models/services/servicestype'
 import Image from 'next/image'
 import Slider from 'react-slick'
-import IconSlideArrow from '../../../../public/icon/navigation/IconSlideArrow'
+import IconSlideArrow from '../../../../../public/icon/navigation/IconSlideArrow'
 
 interface Props {
     data: ServiceProjectType[]

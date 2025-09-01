@@ -1,0 +1,10 @@
+{
+    "home": {
+        "about": "about",
+        "contact": "contact"
+    },
+    "LocaleLayout": {
+        "title": "next-intl Beispiel",
+        "description": "Please double-check the browser address bar or use the navigation to go to a known page."
+    }
+}

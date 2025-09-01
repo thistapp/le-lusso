@@ -8,7 +8,7 @@ import {
 import Image from 'next/image'
 import React, { FC, useState } from 'react'
 import { Fade } from 'react-awesome-reveal'
-import CheckIcon from '../../../../public/icon/global/checkIcon'
+import CheckIcon from '../../../../../public/icon/global/checkIcon'
 
 interface Props {
     data: GalleryInterface[]

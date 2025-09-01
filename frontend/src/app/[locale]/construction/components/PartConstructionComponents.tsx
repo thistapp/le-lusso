@@ -8,18 +8,18 @@ import {
     ConstructionCategory,
     ConstructionGallery,
 } from '@/config/constructionData'
-import GalleryComponent from '@/app/portfolio/components/galleryComponents'
+import GalleryComponent from '@/app/[locale]/portfolio/components/galleryComponents'
 
-import IconBuildIn from '../../../../public/icon/partConstruction/IconBuildin'
-import IconRenovation from '../../../../public/icon/partConstruction/IconRenovation'
-import IconPartitioning from '../../../../public/icon/partConstruction/IconPartitioning'
-import IconPainting from '../../../../public/icon/partConstruction/IconPainting'
-import IconCeiling from '../../../../public/icon/partConstruction/IconCeiling'
-import IconGlass from '../../../../public/icon/partConstruction/IconGlass'
-import IconStainlessSteel from '../../../../public/icon/partConstruction/IconStainlessSteel'
-import IconStructureDemolition from '../../../../public/icon/partConstruction/IconStructureDemolition'
-import IconMaintenance from '../../../../public/icon/partConstruction/IconMaintenance'
-import IconFlooringAndTiling from '../../../../public/icon/partConstruction/IconFlooringAndTiling'
+import IconBuildIn from '../../../../../public/icon/partConstruction/IconBuildin'
+import IconRenovation from '../../../../../public/icon/partConstruction/IconRenovation'
+import IconPartitioning from '../../../../../public/icon/partConstruction/IconPartitioning'
+import IconPainting from '../../../../../public/icon/partConstruction/IconPainting'
+import IconCeiling from '../../../../../public/icon/partConstruction/IconCeiling'
+import IconGlass from '../../../../../public/icon/partConstruction/IconGlass'
+import IconStainlessSteel from '../../../../../public/icon/partConstruction/IconStainlessSteel'
+import IconStructureDemolition from '../../../../../public/icon/partConstruction/IconStructureDemolition'
+import IconMaintenance from '../../../../../public/icon/partConstruction/IconMaintenance'
+import IconFlooringAndTiling from '../../../../../public/icon/partConstruction/IconFlooringAndTiling'
 import TitleComponents from '@/components/elements/titleComponents'
 
 const PartConstructionComponent = () => {
