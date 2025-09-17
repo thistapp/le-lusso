@@ -28,9 +28,9 @@ export function generateStaticParams() {
 export async function generateMetadata({
     params,
 }: {
-    params: { locale: string }
+    params: Promise<{ locale: string }>
 }): Promise<Metadata> {
-    const { locale } = params
+    const { locale } = await params
 
     const t = await getTranslations({
         locale: locale as Locale,
@@ -46,8 +46,12 @@ export async function generateMetadata({
 export default async function LocaleLayout({
     children,
     params,
-}: LayoutProps<'/[locale]'>) {
+}: {
+    children: React.ReactNode
+    params: Promise<{ locale: string }>
+}) {
     const { locale } = await params
+
     if (!hasLocale(routing.locales, locale)) {
         notFound()
     }
