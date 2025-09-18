@@ -51,7 +51,7 @@ const ProjectGalleryComponents: React.FC<Props> = ({ gallery }) => {
     useEffect(() => {
         setAlbum(gallery)
     }, [])
-    console.log(open)
+    // console.log(open)
     return (
         <div className="w-full flex flex-col gap-2">
             <Slider ref={sliderRef} {...settings} className="gallery-slider">

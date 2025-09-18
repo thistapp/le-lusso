@@ -22,7 +22,7 @@ const AboutusComponent: FC<Props> = ({ data, listData }) => {
         setIsOpen(index)
     }
 
-    console.log(isOpen)
+    // console.log(isOpen)
     return (
         <div className="w-full">
             <div className="max-w-7xl w-full my-12 mx-auto uppercase flex flex-col ">

@@ -27,7 +27,7 @@ const StepIconComponents = ({
         setIsCate(category[0].value)
         setFilterCate(category.filter((data) => data.value !== 'work-flow'))
     }, [])
-    console.log(context)
+    // console.log(context)
     return (
         <>
             <div className="w-full hidden lg:flex flex-wrap justify-center relative">
