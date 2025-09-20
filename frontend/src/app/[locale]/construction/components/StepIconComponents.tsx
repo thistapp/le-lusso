@@ -1,3 +1,5 @@
+'use client'
+
 import { CategoryConstructionType } from '@/models/partconstruction/CategoryConstruc'
 import { useContext, useEffect, useState } from 'react'
 import { ConstrucContext } from '../Utils/ConstructionContext'

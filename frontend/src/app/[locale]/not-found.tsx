@@ -1,8 +1,6 @@
-import i18next from 'i18next'
 import Link from 'next/link'
 
 export default function NotFound() {
-    const lang = i18next.language || 'en'
     return (
         <div className="w-full h-[15em] lg:h-[25em] flex flex-col items-center justify-center text-center gap-3 ">
             <h2 className="text-xl lg:text-3xl font-bold ">{`404 – Page Not Found`}</h2>

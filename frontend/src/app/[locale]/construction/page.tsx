@@ -1,5 +1,10 @@
+import { Suspense } from 'react'
 import PartConstructionComponent from './components/PartConstructionComponents'
 
 export default function page() {
-    return <PartConstructionComponent />
+    return (
+        <Suspense fallback={<div />}>
+            <PartConstructionComponent />
+        </Suspense>
+    )
 }
