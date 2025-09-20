@@ -47,7 +47,7 @@ const WhyUsComponent = (data: any) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-6">
+                <div className="col-span-full lg:col-span-6">
                     <Fade>
                         <Image
                             src={'/gallery/LINE_ALBUM_ฝาก_241129_1.jpg'}

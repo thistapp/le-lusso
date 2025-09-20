@@ -54,35 +54,35 @@ const portData: GalleryInterface[] = [
         gallery: [
             {
                 id: 0,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_1.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg',
             },
             {
                 id: 1,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_2.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_2.jpg',
             },
             {
                 id: 2,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_3.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_3.jpg',
             },
             {
                 id: 3,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_4.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_4.jpg',
             },
             {
                 id: 4,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_5.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_5.jpg',
             },
             {
                 id: 5,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_6.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_6.jpg',
             },
             {
                 id: 6,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_7.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_7.jpg',
             },
             {
                 id: 7,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_8.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_8.jpg',
             },
         ],
         url: 'project/lorem-ipsum1',
@@ -94,35 +94,35 @@ const portData: GalleryInterface[] = [
         gallery: [
             {
                 id: 0,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_9.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_9.jpg',
             },
             {
                 id: 1,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_10.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_10.jpg',
             },
             {
                 id: 2,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_11.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_11.jpg',
             },
             {
                 id: 3,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_12.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_12.jpg',
             },
             {
                 id: 4,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_13.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_13.jpg',
             },
             {
                 id: 5,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_14.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_14.jpg',
             },
             {
                 id: 6,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_15.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_15.jpg',
             },
             {
                 id: 7,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_16.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_16.jpg',
             },
         ],
         url: 'project/lorem-ipsum2',
@@ -134,19 +134,19 @@ const portData: GalleryInterface[] = [
         gallery: [
             {
                 id: 0,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_17.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_17.jpg',
             },
             {
                 id: 1,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_18.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_18.jpg',
             },
             {
                 id: 2,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_19.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_19.jpg',
             },
             {
                 id: 3,
-                image: '/gallery/port1/LINE_ALBUM_FIRST P. KHUN NUT_๒๔๐๘๒๕_20.jpg',
+                image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_20.jpg',
             },
         ],
         url: 'project/lorem-ipsum3',
