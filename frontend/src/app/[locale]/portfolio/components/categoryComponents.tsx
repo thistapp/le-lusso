@@ -10,6 +10,7 @@ const CategoryComponents = ({ data }: any) => {
     const onSelect = (value: string) => {
         setIsCate(isCate === value ? '' : value)
     }
+
     return (
         <div className="p-3 flex flex-wrap justify-center gap-2">
             {data?.portCategory.map((o: any, i: number) => (

@@ -14,7 +14,7 @@
             },
             {
                 "title": "build in",
-                "path": "/construction?type=build-in"
+                "path": "/construction?type=buildin"
             },
             {
                 "title": "partitioning",
@@ -42,7 +42,7 @@
             },
             {
                 "title": "repair and maintenance",
-                "path": "/construction?type=repair-and-maintenance"
+                "path": "/construction?type=maintenance"
             },
             {
                 "title": "flooring and tiling",
@@ -65,6 +65,10 @@
             {
                 "title": "commercial building",
                 "path": "/portfolio?type=commercial-building"
+            },
+            {
+                "title": "townhouse",
+                "path": "/portfolio?type=townhouse"
             },
             {
                 "title": "office",

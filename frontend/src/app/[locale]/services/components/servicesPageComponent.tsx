@@ -11,7 +11,7 @@ import ServicesStepComponent from './servicesStepComponent'
 
 const ServicesComponent = () => {
     return (
-        <div className="mt-20 lg:mt-28">
+        <div className="">
             <div className="w-full flex flex-col items-center justify-center ">
                 <ServicesSesstion data={servicesData} />
                 <ServicesStepComponent data={servicesStepData} />

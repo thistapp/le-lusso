@@ -118,7 +118,7 @@ const PartConstructionComponent = () => {
                 setIsCate: setCate,
             }}
         >
-            <div className="mt-[2.5rem] lg:mt-20 w-full">
+            <div className="w-full">
                 <TitleComponents
                     title="part construction"
                     className="title-section-part-construction h-[10rem]"

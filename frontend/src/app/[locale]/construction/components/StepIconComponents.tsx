@@ -1,6 +1,7 @@
 import { CategoryConstructionType } from '@/models/partconstruction/CategoryConstruc'
 import { useContext, useEffect, useState } from 'react'
 import { ConstrucContext } from '../Utils/ConstructionContext'
+import { useSearchParams } from 'next/navigation'
 
 const StepIconComponents = ({
     category,
@@ -9,6 +10,8 @@ const StepIconComponents = ({
     category: CategoryConstructionType[]
     IconFunc: (value: string) => React.ReactNode
 }) => {
+    const searchParams = useSearchParams()
+    const search = searchParams.get('type')
     const [active, setActive] = useState(category[0].value)
     const [filterCate, setFilterCate] = useState<CategoryConstructionType[]>([])
     const context = useContext(ConstrucContext)
@@ -23,10 +26,10 @@ const StepIconComponents = ({
     }
 
     useEffect(() => {
-        setActive(category[0].value)
-        setIsCate(category[0].value)
+        setActive(search ? search : category[0].value)
+        setIsCate(search ? search : category[0].value)
         setFilterCate(category.filter((data) => data.value !== 'work-flow'))
-    }, [])
+    }, [search])
     // console.log(context)
     return (
         <>

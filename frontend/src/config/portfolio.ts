@@ -5,15 +5,15 @@ const portCategory: dataCate[] = [
     { label: 'all', value: '' },
     {
         label: 'condo',
-        value: 'condo',
+        value: 'condominium',
     },
     {
-        label: 'home',
-        value: 'home',
+        label: 'house',
+        value: 'house',
     },
     {
-        label: 'commercial design',
-        value: 'commercial-design',
+        label: 'commercial building',
+        value: 'commercial-building',
     },
     {
         label: 'townhouse',

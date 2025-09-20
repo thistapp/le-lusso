@@ -5,8 +5,11 @@ import React, { useEffect, useState } from 'react'
 import { PortContext } from '../Utils/portfolioContext'
 import CategoryComponents from './categoryComponents'
 import GalleryComponent from './galleryComponents'
+import { useSearchParams } from 'next/navigation'
 
 const PortComponents = ({ data }: any) => {
+    const searchParams = useSearchParams()
+    const search = searchParams.get('type')
     const [cate, setCate] = useState('')
     const [open, setOpen] = useState(false)
     // const [galleryIMG, setGalleryIMG] = useState<any>()
@@ -22,12 +25,8 @@ const PortComponents = ({ data }: any) => {
     // }
 
     useEffect(() => {
-        if (window.location.search) {
-            const query = window.location.search.split('=')
-            setCate(query != undefined ? query[1] : '')
-        }
-    }, [])
-
+        setCate(search ? search : '')
+    }, [search])
     return (
         <PortContext.Provider
             value={{
