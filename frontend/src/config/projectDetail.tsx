@@ -48,7 +48,7 @@ const projectData: projectType[] = [
         titleDesc: 'Lorem Ipsum2',
         desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        cate: ['condo'],
+        cate: ['condominium'],
         gallery: [
             {
                 id: 0,
@@ -90,7 +90,7 @@ const projectData: projectType[] = [
         titleDesc: 'Lorem Ipsum3',
         desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        cate: ['office', 'commercial-design', 'office'],
+        cate: ['office', 'commercial-building', 'office'],
         gallery: [
             {
                 id: 0,
@@ -158,7 +158,7 @@ const projectData: projectType[] = [
         titleDesc: 'Lorem Ipsum5',
         desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        cate: ['home', 'office'],
+        cate: ['house', 'office'],
         gallery: [
             {
                 id: 0,
@@ -242,7 +242,7 @@ const projectData: projectType[] = [
         titleDesc: 'Lorem Ipsum7',
         desc1: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         desc2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        cate: ['townhouse', 'commercial-design'],
+        cate: ['townhouse', 'commercial-building'],
         gallery: [
             {
                 id: 0,

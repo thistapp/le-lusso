@@ -27,6 +27,7 @@ const PortComponents = ({ data }: any) => {
     useEffect(() => {
         setCate(search ? search : '')
     }, [search])
+
     return (
         <PortContext.Provider
             value={{
@@ -37,21 +38,16 @@ const PortComponents = ({ data }: any) => {
                 // setIsGalleryIMG: setGalleryIMG,
             }}
         >
-            <div className="mt-24">
-                <div className="max-w-6xl mx-auto grid grid-cols-12">
-                    <div className="col-span-12">
-                        <h1 className="text-3xl text-center uppercase font-bold">
-                            PortFolio
-                        </h1>
-                        <CategoryComponents data={data} />
-                        {data && (
-                            <GalleryComponent
-                                data={data?.portData}
-                                isCate={cate}
-                            />
-                        )}
-                        <div className="p-3 grid-port"></div>
-                    </div>
+            <div className="max-w-6xl mx-auto grid grid-cols-12">
+                <div className="col-span-12">
+                    <h1 className="text-3xl text-center uppercase font-bold">
+                        PortFolio
+                    </h1>
+                    <CategoryComponents data={data} />
+                    {data && (
+                        <GalleryComponent data={data?.portData} isCate={cate} />
+                    )}
+                    <div className="p-3 grid-port"></div>
                 </div>
             </div>
             {/* {open && (

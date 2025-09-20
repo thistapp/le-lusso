@@ -26,7 +26,7 @@ const ProjectDetailComponents = () => {
     if (!projectDetail) return <div></div>
 
     return (
-        <div className="mt-24">
+        <div className="">
             <ProjectDetailDesktopMode data={projectDetail} />
             <ProjectDetailMobileMode data={projectDetail} />
         </div>

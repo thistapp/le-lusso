@@ -90,7 +90,7 @@ const portData: GalleryInterface[] = [
     {
         title: 'Lorem Ipsum2',
         desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        cate: ['condo'],
+        cate: ['condominium'],
         gallery: [
             {
                 id: 0,
@@ -130,7 +130,7 @@ const portData: GalleryInterface[] = [
     {
         title: 'Lorem Ipsum3',
         desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        cate: ['office', 'commercial-design', 'office'],
+        cate: ['office', 'commercial-building', 'office'],
         gallery: [
             {
                 id: 0,
@@ -194,7 +194,7 @@ const portData: GalleryInterface[] = [
     {
         title: 'Lorem Ipsum5',
         desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        cate: ['home', 'office'],
+        cate: ['house', 'office'],
         gallery: [
             {
                 id: 0,
@@ -274,7 +274,7 @@ const portData: GalleryInterface[] = [
     {
         title: 'Lorem Ipsum7',
         desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        cate: ['townhouse', 'commercial-design'],
+        cate: ['townhouse', 'commercial-building'],
         gallery: [
             {
                 id: 0,
