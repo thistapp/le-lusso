@@ -69,7 +69,7 @@ const HeaderMobile: React.FC<Props> = ({ config }) => {
                         {config?.map((o: MenuItem, i: number) => (
                             <div className="relative" key={i}>
                                 <div
-                                    className={`text-lg text-[#714E39] font-bold capitalize tracking-wider`}
+                                    className={`text-lg text-[#714E39] font-bold capitalize tracking-wider uppercase`}
                                 >
                                     {o.submenu.length > 0 ? (
                                         <div

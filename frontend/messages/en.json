@@ -4,7 +4,47 @@
         "contact": "contact"
     },
     "LocaleLayout": {
-        "title": "next-intl Beispiel",
-        "description": "Please double-check the browser address bar or use the navigation to go to a known page."
+        "title": "Le Lusso",
+        "description": "house renovation and sales | 3D house desgin | home extension free | house renovation in bangkok"
+    },
+    "services": {
+        "title": "services",
+        "session": {
+            "session1": {
+                "title": "INTERIOR DESIGN",
+                "desc": "Layout & Mood/Tone Development\n- 3D Visualization & Construction Drawings"
+            },
+            "session2": {
+                "title": "Design & Build / Renovation",
+                "desc": "- Site Survey, Drafting & Permit Application\n- BOQ & Budget Control / Construction Team / Engineering Supervision"
+            },
+            "session3": {
+                "title": "Custom Built-in Furniture",
+                "desc": "- Tailored Design\n- Material Selection"
+            }
+        },
+        "step": {
+            "title": "process",
+            "step1": {
+                "title": "Consult & Site Visit",
+                "desc": "- On-site visit to measure actual space\n- Gather client lifestyle preferences and budget requirements"
+            },
+            "step2": {
+                "title": "Design Presentation",
+                "desc": "- Deliver moodboard, layout, and 3D perspectives for material selection and atmosphere approval"
+            },
+            "step3": {
+                "title": "Estimate & BOQ",
+                "desc": "- Provide clear cost summary and detailed Bill of Quantities (BOQ)\n- Flexible adjustments to match client budget"
+            },
+            "step4": {
+                "title": "Construction Begins",
+                "desc": "- Begin construction with continuous updates via a real-time project tracking system"
+            },
+            "step5": {
+                "title": "Handover & Styling",
+                "desc": "- Final styling and furnishing before move-in\n- Thorough quality inspection to ensure readiness for living"
+            }
+        }
     }
 }

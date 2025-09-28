@@ -4,7 +4,47 @@
         "contact": "ติดต่อ"
     },
     "LocaleLayout": {
-        "title": "next-intldaskndkasnfpsanmp",
-        "description": "Erfahre mehr über next-intl in der offiziellen Dokumentation."
+        "title": "Le Lusso",
+        "description": "รับต่อเติมบ้าน | รีโนเวทบ้าน | ขึ้นแบบบ้านฟรี | รับรีโนเวทพร้อมขายทันที | รับตกแต่งคอนโด"
+    },
+    "services": {
+        "title": "services",
+        "session": {
+            "session1": {
+                "title": "INTERIOR DESIGN",
+                "desc": "- วาง layout, mood & tone\n- ตามไลฟ์สไตล์-ออกแบบ 3D พร้อมแบบก่อสร้าง"
+            },
+            "session2": {
+                "title": "Design & Build / Renovation",
+                "desc": "- สำรวจพื้นที่ เขียนแบบ ขออนุญาต ก่อสร้างจริง \n- มี BOQ คุมงบ / ทีมช่าง / วิศวกรควบคุมงาน"
+            },
+            "session3": {
+                "title": "Custom Built-in Furniture",
+                "desc": "- ออกแบบบิวท์อินให้เหมาะกับขนาดห้อง\n- เลือกวัสดุตามงบและ mood"
+            }
+        },
+        "step": {
+            "title": "process",
+            "step1": {
+                "title": "Consult & Site Visit",
+                "desc": "นัดพบ / วัดพื้นที่จริง เพื่อเก็บข้อมูล ไลฟ์สไตล์ และงบประมาณ"
+            },
+            "step2": {
+                "title": "Design Presentation",
+                "desc": "ส่งแบบ Moodboard, Layout และ 3D Perspective เพื่อเลือกวัสดุ + บรรยากาศ"
+            },
+            "step3": {
+                "title": "Estimate & BOQ",
+                "desc": "สรุปราคาและรายการวัสดุ (BOQ) แบบโปร่งใส พร้อมปรับตามงบได้"
+            },
+            "step4": {
+                "title": "Construction Begins",
+                "desc": "เริ่มก่อสร้าง พร้อมการอัปเดตผ่านระบบติดตามหน้างาน"
+            },
+            "step5": {
+                "title": "Handover & Styling",
+                "desc": "ส่งมอบงานพร้อมสไตลิ่ง และตรวจเช็คคุณภาพก่อนเข้าอยู่"
+            }
+        }
     }
 }

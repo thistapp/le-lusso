@@ -1,5 +1,6 @@
 import CardComponent from '@/components/elements/card'
 import { ServiceCardType } from '@/models/services/servicestype'
+import { useTranslations } from 'next-intl'
 import Slider from 'react-slick'
 
 interface Props {
@@ -7,6 +8,8 @@ interface Props {
 }
 
 const ServicesSesstion: React.FC<Props> = ({ ...props }) => {
+    const t = useTranslations('services')
+
     const settingSlide = {
         infinite: true,
         speed: 500,
@@ -31,7 +34,7 @@ const ServicesSesstion: React.FC<Props> = ({ ...props }) => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: true,
-                    centerPadding: '150px',
+                    centerPadding: '75px',
                     className: 'center',
                 },
             },
@@ -60,15 +63,15 @@ const ServicesSesstion: React.FC<Props> = ({ ...props }) => {
     return (
         <div className="w-full my-6 lg:my-12 slide-services-container">
             <h1 className="text-2xl lg:text-5xl font-bold text-center uppercase underline  mb-4">
-                services
+                {t('title')}
             </h1>
             <Slider {...settingSlide}>
                 {props.data.map((o, i) => (
                     <CardComponent
                         key={i}
                         image={o.image}
-                        title={o.title}
-                        desc={o.desc}
+                        title={t(o.title)}
+                        desc={t(o.desc)}
                         actionButton={true}
                     />
                 ))}

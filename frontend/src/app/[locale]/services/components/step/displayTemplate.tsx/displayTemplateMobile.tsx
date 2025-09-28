@@ -3,11 +3,15 @@ import Image from 'next/image'
 import { ServiceStepType } from '@/models/services/servicestype'
 import DisplayDetailStep from '../displayDetailStep'
 import { ColorStepTextTheme, ColorStepTheme } from '@/Enum/enumColor'
+import { useTranslations } from 'next-intl'
+
+type TFunction = ReturnType<typeof useTranslations>
 
 interface Props {
     step: number
     stepPosition: boolean //true is left text false is rigth text
     data: ServiceStepType
+    t: TFunction
 }
 
 const DisplayTemplateMobile: React.FC<Props> = ({ ...props }) => {
@@ -21,8 +25,8 @@ const DisplayTemplateMobile: React.FC<Props> = ({ ...props }) => {
                 className="w-full object-cover section-step-image"
             />
             <DisplayDetailStep
-                title={props.data.title}
-                desc={props.data.desc}
+                title={props.t(props.data.title)}
+                desc={props.t(props.data.desc)}
                 bgColor={
                     props.stepPosition
                         ? ColorStepTheme.left

@@ -2,11 +2,15 @@ import Image from 'next/image'
 import { ColorStepTextTheme, ColorStepTheme } from '@/Enum/enumColor'
 import { ServiceStepType } from '@/models/services/servicestype'
 import DisplayDetailStep from '../displayDetailStep'
+import { useTranslations } from 'next-intl'
+
+type TFunction = ReturnType<typeof useTranslations>
 
 interface Props {
     step: number
     stepPosition: boolean //true is left text false is rigth text
     data: ServiceStepType
+    t: TFunction
 }
 
 const DisplayTemplateDesktop: React.FC<Props> = ({ ...props }) => {
@@ -15,15 +19,15 @@ const DisplayTemplateDesktop: React.FC<Props> = ({ ...props }) => {
             <div className={`relative w-1/2 h-[30rem]`}>
                 {props.stepPosition ? (
                     <DisplayDetailStep
-                        title={props.data.title}
-                        desc={props.data.desc}
+                        title={props.t(props.data.title)}
+                        desc={props.t(props.data.desc)}
                         bgColor={ColorStepTheme.left}
                         textColor={ColorStepTextTheme.dark}
                     />
                 ) : (
                     <Image
                         src={props.data.image}
-                        alt={props.data.title}
+                        alt={props.t(props.data.title)}
                         fill
                         className="bg-cover object-cover object-center"
                     />
@@ -36,14 +40,14 @@ const DisplayTemplateDesktop: React.FC<Props> = ({ ...props }) => {
                 {props.stepPosition ? (
                     <Image
                         src={props.data.image}
-                        alt={props.data.title}
+                        alt={props.t(props.data.title)}
                         fill
                         className="w-full bg-cover object-cover object-bottom"
                     />
                 ) : (
                     <DisplayDetailStep
-                        title={props.data.title}
-                        desc={props.data.desc}
+                        title={props.t(props.data.title)}
+                        desc={props.t(props.data.desc)}
                         bgColor={ColorStepTheme.right}
                         textColor={ColorStepTextTheme.light}
                     />

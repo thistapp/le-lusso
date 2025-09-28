@@ -6,20 +6,20 @@ import {
 
 export const servicesData: ServiceCardType[] = [
     {
-        title: 'INTERIOR DESIGN',
-        desc: '<ul class="list-disc"><li>วาง layout, mood & tone ตามไลฟ์สไตล์</li><li>ออกแบบ 3D พร้อมแบบก่อสร้าง</li></ul>',
+        title: 'session.session1.title',
+        desc: 'session.session1.desc',
         path: '',
         image: '/gallery/servicesPage/slide/services_card_1.JPG',
     },
     {
-        title: 'Design & Build / Renovation',
-        desc: '<ul class="list-disc"><li>สำรวจพื้นที่ เขียนแบบ ขออนุญาต ก่อสร้างจริง</li><li>มี BOQ คุมงบ/ ทีมช่าง/ วิศวกรควบคุมงาน</li></ul>',
+        title: 'session.session2.title',
+        desc: 'session.session2.desc',
         path: '',
         image: '/gallery/servicesPage/slide/services_card_2.jpg',
     },
     {
-        title: 'Custom Built-in Furniture',
-        desc: '<ul class="list-disc"><li>ออกแบบบิวท์อินให้เหมาะกับขนาดห้อง</li><li>เลือกวัสดุตามงบและ mood</li></ul>',
+        title: 'session.session3.title',
+        desc: 'session.session3.desc',
         path: '',
         image: '/gallery/servicesPage/slide/services_card_3.jpg',
     },
@@ -27,28 +27,28 @@ export const servicesData: ServiceCardType[] = [
 
 export const servicesStepData: ServiceStepType[] = [
     {
-        title: 'Consult & Site Visit',
-        desc: 'นัดพบ / วัดพื้นที่จริง เพื่อเก็บข้อมูล ไลฟ์สไตล์ และงบประมาณ',
+        title: 'step.step1.title',
+        desc: 'step.step1.desc',
         image: '/gallery/servicesPage/step/services_step_1.jpeg',
     },
     {
-        title: 'Design Presentation',
-        desc: 'ส่งแบบ Moodboard, Layout และ 3D Perspective เพื่อเลือกวัสดุ + บรรยากาศ',
+        title: 'step.step2.title',
+        desc: 'step.step2.desc',
         image: '/gallery/servicesPage/step/services_step_2.JPG',
     },
     {
-        title: 'Estimate & BOQ',
-        desc: 'สรุปราคาและรายการวัสดุ (BOQ) แบบโปร่งใส พร้อมปรับตามงบได้',
+        title: 'step.step3.title',
+        desc: 'step.step3.desc',
         image: '/gallery/servicesPage/step/services_step_3.png',
     },
     {
-        title: 'Construction Begins',
-        desc: 'เริ่มก่อสร้าง พร้อมการอัปเดตผ่านระบบติดตามหน้างาน',
+        title: 'step.step4.title',
+        desc: 'step.step4.desc',
         image: '/gallery/servicesPage/step/services_step_4.jpeg',
     },
     {
-        title: 'Handover & Styling',
-        desc: 'ส่งมอบงานพร้อมสไตลิ่ง และตรวจเช็คคุณภาพก่อนเข้าอยู่',
+        title: 'step.step5.title',
+        desc: 'step.step5.desc',
         image: '/gallery/servicesPage/step/services_step_5.png',
     },
 ]

@@ -39,7 +39,7 @@ const CardComponent: React.FC<Props> = ({ ...props }) => {
                             props.customClassNameDesc
                                 ? props.customClassNameDesc
                                 : 'text-base'
-                        } tracking-wider line-clamp-4 overflow-hidden text-ellipsis list-disc pl-4`}
+                        } tracking-wider line-clamp-4 overflow-hidden text-ellipsis whitespace-pre-wrap`}
                         dangerouslySetInnerHTML={{ __html: props.desc }}
                     />
                 </div>

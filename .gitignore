@@ -130,3 +130,4 @@ dist
 .pnp.*
 frontend/package-lock.json
 .DS_Store
+frontend/messages/en.d.json.ts

@@ -49,7 +49,7 @@ const HeaderComponent: FC<props> = ({ type, isScrolled = false }) => {
                                         o.submenu.length > 0
                                             ? 'menu-title'
                                             : 'hyper-link-header'
-                                    } text-lg text-[#714E39] font-bold capitalize tracking-wider`}
+                                    } text-lg text-[#714E39] font-bold tracking-wider uppercase`}
                                 >
                                     <Link href={o.path}>{o.title}</Link>
                                 </div>
