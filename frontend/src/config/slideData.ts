@@ -36,23 +36,28 @@ const slideData: dataSlideType[] = [
 
 const portData: dataSlideType[] = [
     {
-        title: 'condominium',
-        image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg',
+        title: 'condo',
+        image: '/gallery/categorySlide/condominium.jpg',
         path: '/portfolio?type=condominium',
     },
     {
         title: 'house',
-        image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg',
+        image: '/gallery/categorySlide/house.jpg',
         path: '/portfolio?type=house',
     },
     {
         title: 'commercial building',
-        image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg',
+        image: '/gallery/categorySlide/commercial-building.jpg',
         path: '/portfolio?type=commercial-building',
     },
     {
+        title: 'townhouse',
+        image: '/gallery/categorySlide/townhouse.jpg',
+        path: '/portfolio?type=townhouse',
+    },
+    {
         title: 'office',
-        image: '/gallery/port1/LINE_ALBUM_FIRST_P_KHUN_NUT_๒๔๐๘๒๕_1.jpg',
+        image: '/gallery/categorySlide/office.jpg',
         path: '/portfolio?type=office',
     },
 ]

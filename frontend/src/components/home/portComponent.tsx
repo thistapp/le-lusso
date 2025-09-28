@@ -13,7 +13,7 @@ const PortComponents = (port: any) => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
             {
@@ -78,7 +78,7 @@ const PortComponents = (port: any) => {
                                     className="border-2 border-solid border-white"
                                     style={{
                                         width: '100%',
-                                        height: 'auto',
+                                        height: '505px',
                                     }}
                                 />
                             </div>
