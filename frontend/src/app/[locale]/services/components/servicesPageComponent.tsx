@@ -1,19 +1,19 @@
 'use client'
 
-import ServicesSesstion from './servicesSesstionComponent'
 import {
     servicesStepData,
     servicesData,
     // servicesProject,
 } from '@/config/servicesData'
 import ServicesStepComponent from './servicesStepComponent'
+import ServicesSession from './servicesSessionComponent'
 // import ServicesProjectComponent from './servicesProjectComponent'
 
 const ServicesComponent = () => {
     return (
         <div className="">
             <div className="w-full flex flex-col items-center justify-center ">
-                <ServicesSesstion data={servicesData} />
+                <ServicesSession data={servicesData} />
                 <ServicesStepComponent data={servicesStepData} />
                 {/* portfolio section waiting for comfirm */}
                 {/* <div className="w-full mt-8">

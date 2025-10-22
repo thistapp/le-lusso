@@ -8,9 +8,13 @@ import Modal from '@/components/elements/modal'
 
 interface Props {
     gallery: galleryData[]
+    customClass?: string
 }
 
-const ProjectGalleryComponents: React.FC<Props> = ({ gallery }) => {
+const ProjectGalleryComponents: React.FC<Props> = ({
+    gallery,
+    customClass,
+}) => {
     const [album, setAlbum] = useState<galleryData[]>([])
     const [open, setOpen] = useState(false)
     const [modalIMG, setModalIMG] = useState<galleryData>()
@@ -53,7 +57,7 @@ const ProjectGalleryComponents: React.FC<Props> = ({ gallery }) => {
     }, [])
     // console.log(open)
     return (
-        <div className="w-full flex flex-col gap-2">
+        <div className={`w-full flex flex-col gap-2 ${customClass}`}>
             <Slider ref={sliderRef} {...settings} className="gallery-slider">
                 {gallery.map((item) => (
                     <div className="p-4 lg:p-2" key={item.id}>

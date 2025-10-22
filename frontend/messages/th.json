@@ -74,5 +74,9 @@
     },
     "portfolio": {
         "title": "portfolio"
+    },
+    "detail": {
+        "projectOverview": "ภาพรวม Project:",
+        "designHighlights": "จุดเด่นของการออกแบบ:"
     }
 }

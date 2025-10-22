@@ -1,16 +1,20 @@
 'use client'
 
-import { useParams } from 'next/navigation'
-import ProjectDetailDesktopMode from './projectDetailDesktopMode'
-import { projectType } from '@/models/portfolio'
 import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
+import { useParams } from 'next/navigation'
+import { projectType } from '@/models/portfolio'
 import projectData from '@/config/projectDetail'
-import ProjectDetailMobileMode from './projectDetailMobileMode'
+import ProjectGalleryComponents from './projectGalleryComponents'
+import { useClientLocale } from '@/hooks/getLocale'
 
 const ProjectDetailComponents = () => {
+    const t = useTranslations('detail')
+    const locale = useClientLocale()
     const params = useParams()
     const slugId = params.slugId
     const [projectDetail, setProjectDetail] = useState<projectType>()
+    const [loading, setLoading] = useState<boolean>(false)
 
     useEffect(() => {
         const filterProject = projectData.filter(
@@ -24,11 +28,37 @@ const ProjectDetailComponents = () => {
     }, [])
 
     if (!projectDetail) return <div></div>
-    console.log(projectDetail)
+    // console.log(projectDetail)
     return (
-        <div className="">
-            <ProjectDetailDesktopMode data={projectDetail} />
-            <ProjectDetailMobileMode data={projectDetail} />
+        <div className="max-w-7xl mx-auto w-full flex flex-col gap-3">
+            <div className="w-full flex lg:flex-wrap flex-wrap-reverse relative">
+                <div className="w-full lg:w-5/12 p-4 self-start sticky top-20 lg:pt-10">
+                    <h1 className="font-bold text-xl underline uppercase mb-6 text-center lg:text-left">
+                        {projectDetail.title}
+                    </h1>
+                    <p className="font-bold text-xl">{t('projectOverview')}</p>
+                    <p className="text-justify">
+                        {locale === 'th'
+                            ? projectDetail.desc1.th
+                            : projectDetail.desc1.en}
+                    </p>
+                </div>
+                <div className="w-full lg:w-7/12 p-4">
+                    <ProjectGalleryComponents gallery={projectDetail.gallery} />
+                </div>
+            </div>
+            <div className="w-full p-4 lg:py-6 px-4">
+                <p className="font-bold text-xl">{t('designHighlights')}</p>
+                <p
+                    dangerouslySetInnerHTML={{
+                        __html:
+                            locale === 'th'
+                                ? projectDetail.desc2.th
+                                : projectDetail.desc2.en,
+                    }}
+                    className="px-5"
+                />
+            </div>
         </div>
     )
 }

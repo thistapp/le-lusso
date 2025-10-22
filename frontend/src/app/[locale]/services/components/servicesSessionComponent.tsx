@@ -7,7 +7,7 @@ interface Props {
     data: ServiceCardType[]
 }
 
-const ServicesSesstion: React.FC<Props> = ({ ...props }) => {
+const ServicesSession: React.FC<Props> = ({ ...props }) => {
     const t = useTranslations('services')
 
     const settingSlide = {
@@ -80,4 +80,4 @@ const ServicesSesstion: React.FC<Props> = ({ ...props }) => {
     )
 }
 
-export default ServicesSesstion
+export default ServicesSession
