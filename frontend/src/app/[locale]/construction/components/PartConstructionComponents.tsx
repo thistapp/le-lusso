@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import { ConstrucContext } from '../Utils/ConstructionContext'
 import StepIconComponents from './StepIconComponents'
 import {
@@ -25,91 +25,94 @@ import TitleComponents from '@/components/elements/titleComponents'
 const PartConstructionComponent = () => {
     const [cate, setCate] = useState('')
 
-    const handleIcon = (title: string, width?: number, height?: number) => {
-        const widthDefault = 40
-        const heightDefault = 40
-        switch (title) {
-            case 'renovation':
-                return (
-                    <IconRenovation
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            case 'work-flow':
-                return (
-                    <IconRenovation
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            case 'buildin':
-                return (
-                    <IconBuildIn
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            case 'partitioning':
-                return (
-                    <IconPartitioning
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            case 'painting':
-                return (
-                    <IconPainting
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            case 'ceiling':
-                return (
-                    <IconCeiling
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            case 'glass':
-                return (
-                    <IconGlass
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            case 'stainless-steel':
-                return (
-                    <IconStainlessSteel
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            case 'structure-demolition':
-                return (
-                    <IconStructureDemolition
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            case 'maintenance':
-                return (
-                    <IconMaintenance
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            case 'flooring-and-tiling':
-                return (
-                    <IconFlooringAndTiling
-                        width={width ? width : widthDefault}
-                        height={height ? height : heightDefault}
-                    />
-                )
-            default:
-                return null
-        }
-    }
+    const handleIcon = useCallback(
+        (title: string, width?: number, height?: number) => {
+            const widthDefault = 40
+            const heightDefault = 40
+            switch (title) {
+                case 'renovation':
+                    return (
+                        <IconRenovation
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                case 'work-flow':
+                    return (
+                        <IconRenovation
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                case 'buildin':
+                    return (
+                        <IconBuildIn
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                case 'partitioning':
+                    return (
+                        <IconPartitioning
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                case 'painting':
+                    return (
+                        <IconPainting
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                case 'ceiling':
+                    return (
+                        <IconCeiling
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                case 'glass':
+                    return (
+                        <IconGlass
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                case 'stainless-steel':
+                    return (
+                        <IconStainlessSteel
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                case 'structure-demolition':
+                    return (
+                        <IconStructureDemolition
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                case 'maintenance':
+                    return (
+                        <IconMaintenance
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                case 'flooring-and-tiling':
+                    return (
+                        <IconFlooringAndTiling
+                            width={width ? width : widthDefault}
+                            height={height ? height : heightDefault}
+                        />
+                    )
+                default:
+                    return null
+            }
+        },
+        []
+    )
 
     return (
         <ConstrucContext

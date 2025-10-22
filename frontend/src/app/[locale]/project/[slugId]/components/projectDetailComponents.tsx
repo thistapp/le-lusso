@@ -24,7 +24,7 @@ const ProjectDetailComponents = () => {
     }, [])
 
     if (!projectDetail) return <div></div>
-
+    console.log(projectDetail)
     return (
         <div className="">
             <ProjectDetailDesktopMode data={projectDetail} />

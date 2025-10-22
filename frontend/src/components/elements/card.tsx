@@ -11,7 +11,7 @@ interface Props {
     customClassNameDesc?: string
 }
 
-const CardComponent: React.FC<Props> = ({ ...props }) => {
+const CardComponents: React.FC<Props> = ({ ...props }) => {
     return (
         <div className="w-72 lg:w-[23rem] h-[500px] border-2 border-[#714E39] rounded-lg bg-[#CDC3B8] flex flex-col justify-between mx-auto">
             <div className="w-full ">
@@ -44,14 +44,14 @@ const CardComponent: React.FC<Props> = ({ ...props }) => {
                     />
                 </div>
             </div>
-            <div className="max-w-[10rem] mx-auto mb-4">
+            {/* <div className="max-w-[10rem] mx-auto mb-4">
                 <ButtonComponent
                     title="view more"
                     onPress={props.actionFunction}
                 />
-            </div>
+            </div> */}
         </div>
     )
 }
 
-export default CardComponent
+export default CardComponents

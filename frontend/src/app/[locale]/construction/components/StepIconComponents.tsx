@@ -78,7 +78,7 @@ const StepIconComponents = ({
                             >
                                 {IconFunc(o.value)}
                             </div>
-                            <p>{o.title}</p>
+                            <p className="text-xs">{o.title}</p>
                         </div>
                     </div>
                 ))}

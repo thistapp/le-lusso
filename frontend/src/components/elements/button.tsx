@@ -3,7 +3,7 @@ interface Props {
     onPress?: () => void
 }
 
-const ButtonComponent: React.FC<Props> = ({ ...props }) => {
+const ButtonComponents: React.FC<Props> = ({ ...props }) => {
     return (
         <div
             className="px-4 py-2 border-2 border-black bg-[#222E52] text-white rounded-lg uppercase cursor-pointer "
@@ -14,4 +14,4 @@ const ButtonComponent: React.FC<Props> = ({ ...props }) => {
     )
 }
 
-export default ButtonComponent
+export default ButtonComponents

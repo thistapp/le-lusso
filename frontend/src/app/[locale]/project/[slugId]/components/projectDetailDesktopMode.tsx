@@ -16,7 +16,7 @@ const ProjectDetailDesktopMode: FC<Props> = ({ data }) => {
                     <h1 className="font-bold text-xl underline uppercase mb-6">
                         {data.title}
                     </h1>
-                    <p className="text-justify">{data.desc1}</p>
+                    {/* <p className="text-justify">{data.desc1}</p> */}
                 </div>
                 <div className="w-7/12 p-4">
                     <ProjectGalleryComponents gallery={data.gallery} />
@@ -26,7 +26,7 @@ const ProjectDetailDesktopMode: FC<Props> = ({ data }) => {
                 <h2 className="font-bold text-xl underline uppercase mb-6">
                     {data.titleDesc}
                 </h2>
-                <p className="text-justify">{data.desc2}</p>
+                {/* <p className="text-justify">{data.desc2}</p> */}
             </div>
         </div>
     )

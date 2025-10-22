@@ -7,12 +7,21 @@ export class galleryData {
     }
 }
 
+export class descType {
+    th: string
+    en: string
+    constructor(data: any) {
+        this.th = data?.th || ''
+        this.en = data?.en || ''
+    }
+}
+
 export class projectType {
     id: string
     title: string
     titleDesc: string
-    desc1: string
-    desc2: string
+    desc1: descType
+    desc2: descType
     cate: string[]
     gallery: galleryData[]
     constructor(data: any) {

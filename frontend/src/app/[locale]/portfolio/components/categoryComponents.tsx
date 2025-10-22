@@ -12,16 +12,15 @@ const CategoryComponents = ({ data }: any) => {
     }
 
     return (
-        <div className="p-3 flex flex-wrap justify-center gap-2">
+        <div className="w-full p-3 flex lg:flex-wrap lg:justify-center md:overflow-x-hidden justify-start overflow-x-scroll gap-3">
             {data?.portCategory.map((o: any, i: number) => (
                 <div className="flex flex-wrap" key={i}>
-                    {i != 0 && <span className="mx-5 my-auto">|</span>}
                     <button
                         className="text-xl font-bold"
                         onClick={() => onSelect(o.value)}
                     >
                         <p
-                            className={`port-cate capitalize ${
+                            className={`port-cate capitalize whitespace-nowrap ${
                                 isCate === o.value ? 'active' : ''
                             }`}
                         >

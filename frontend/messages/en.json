@@ -46,5 +46,33 @@
                 "desc": "- Final styling and furnishing before move-in\n- Thorough quality inspection to ensure readiness for living"
             }
         }
+    },
+    "about": {
+        "title": "About Us",
+        "quote": "We don’t just build spaces — we design the way you live.",
+        "at": "At",
+        "desc": ", we believe that exceptional design and precise execution are the foundation of timeless spaces. As a full-service design and build firm, we offer an integrated approach that brings together creative vision, technical expertise, and meticulous craftsmanship to deliver projects that exceed expectations.\n\nFounded with a passion for aesthetics and functionality, Lelusso specializes in architectural design, interior design, construction, renovation, and turnkey project management. Our team is composed of dedicated professionals who work closely with clients to understand their vision, lifestyle, and needs—transforming ideas into elegant, livable realities.\n\nFrom concept development to the final handover, we are committed to ensuring a seamless experience, uncompromising quality, and attention to detail in every phase. Whether it's a new home, a commercial renovation, or a custom interior project, Lelusso is your trusted partner for refined, end-to-end solutions.",
+        "whyus": {
+            "title": "Why Choose Lelusso",
+            "step1": {
+                "title": "One-Stop, Hassle-Free Service",
+                "desc": "From concept to construction, Lelusso offers a fully integrated design and build solution. Our end-to-end service streamlines the entire process—saving you time, eliminating complexity, and ensuring a smooth, professional experience throughout."
+            },
+            "step2": {
+                "title": "Spaces Designed to Enhance Productivity",
+                "desc": "We thoughtfully design every space to align with your lifestyle and support a more productive daily routine. Whether it’s a home office that boosts focus, efficient storage that reduces clutter, or natural lighting that uplifts your mood—we create environments that work for you."
+            },
+            "step3": {
+                "title": "Meticulous Attention to Detail",
+                "desc": "At Lelusso, we believe that great design lives in the details. From materials and finishes to layout and functionality, every aspect is carefully considered to deliver timeless elegance with everyday practicality."
+            },
+            "step4": {
+                "title": "Professional Team, Dedicated Support",
+                "desc": "Our experienced architects, designers, and project managers work closely with you at every stage. We provide clear communication, regular updates, and expert guidance to ensure your vision is brought to life with precision and care."
+            }
+        }
+    },
+    "portfolio": {
+        "title": "portfolio"
     }
 }

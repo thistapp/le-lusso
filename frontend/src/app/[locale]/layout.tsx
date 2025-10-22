@@ -71,7 +71,7 @@ export default async function LocaleLayout({
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <div className="flex flex-col justify-between">
                         <Header />
-                        <main>{children}</main>
+                        <main className="min-h-screen ">{children}</main>
                         <Footer />
                     </div>
                 </NextIntlClientProvider>

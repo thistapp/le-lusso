@@ -1,29 +1,23 @@
 'use client'
 
 import Logo from './../logo'
-import menu from '../../../../config/menu.json'
-import HeaderMobile from './../mobile/header'
 import Link from 'next/link'
 import { FC } from 'react'
-// import { useEffect, useState } from 'react'
-
-export enum HeaderType {
-    DEFAULT = 'default',
-    SCROLLED = 'scrolled',
-}
+import { HeaderType, MenuItem } from '@/models/header/header'
 
 interface props {
     type: HeaderType
     isScrolled?: boolean
+    menu: MenuItem[]
 }
 
-const HeaderComponent: FC<props> = ({ type, isScrolled = false }) => {
+const HeaderComponent: FC<props> = ({ type, menu, isScrolled = false }) => {
     const handleStyle = () => {
         switch (true) {
             case type === HeaderType.DEFAULT && !isScrolled:
-                return 'w-full nav-bar text-[#0E1D2F] p-2 lg:p-6 z-50'
+                return 'w-full nav-bar text-[#0E1D2F] p-6 z-50'
             case type === HeaderType.SCROLLED && isScrolled:
-                return `w-full nav-bar text-[#0E1D2F] p-2 lg:p-6 fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
+                return `w-full nav-bar text-[#0E1D2F] p-6 fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
                     isScrolled ? 'translate-y-0' : '-translate-y-full'
                 }`
             default:
@@ -32,12 +26,12 @@ const HeaderComponent: FC<props> = ({ type, isScrolled = false }) => {
     }
 
     return (
-        <header className={`${handleStyle()}`}>
+        <div className={`${handleStyle()}`}>
             <div
-                className={`hidden ${
+                className={`${
                     type === HeaderType.SCROLLED && !isScrolled
-                        ? ''
-                        : 'lg:grid grid-cols-12'
+                        ? 'hidden'
+                        : 'grid grid-cols-12'
                 }`}
             >
                 <div className="col-start-2 col-span-7 content-center">
@@ -78,10 +72,7 @@ const HeaderComponent: FC<props> = ({ type, isScrolled = false }) => {
                     <Logo />
                 </div>
             </div>
-            <div className="block lg:hidden">
-                <HeaderMobile config={menu} />
-            </div>
-        </header>
+        </div>
     )
 }
 

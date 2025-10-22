@@ -38,7 +38,7 @@ const PortComponents = ({ data }: any) => {
             }}
         >
             <div className="max-w-6xl mx-auto grid grid-cols-12">
-                <div className="col-span-12">
+                <div className="col-span-full">
                     <h1 className="text-3xl text-center uppercase font-bold">
                         PortFolio
                     </h1>

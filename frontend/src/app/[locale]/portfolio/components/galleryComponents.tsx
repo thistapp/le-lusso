@@ -22,7 +22,7 @@ const GalleryComponent = ({
             {data
                 .filter((cate: any) => filterData(cate.cate))
                 .map((o: any, i: number) => (
-                    <div className="group cursor-auto" key={i}>
+                    <div className="group cursor-auto px-4" key={i}>
                         <CardGalleryComponents data={o} />
                     </div>
                 ))}

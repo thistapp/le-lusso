@@ -1,7 +1,8 @@
 'use client'
 
+import { HeaderType } from '@/models/header/header'
 import menu from '../../../config/menu.json'
-import HeaderComponent, { HeaderType } from './component/headerComponent'
+import HeaderComponent from './component/headerComponent'
 import HeaderMobile from './mobile/header'
 import { useEffect, useState } from 'react'
 
@@ -10,14 +11,10 @@ const Header = ({}) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.innerWidth >= 768) {
-                if (window.scrollY === 0) {
-                    setShowHeader(false)
-                } else if (window.scrollY > 100) {
-                    setShowHeader(true)
-                }
-            } else {
-                setShowHeader(false) // Ensure it's false on mobile
+            if (window.scrollY === 0) {
+                setShowHeader(false)
+            } else if (window.scrollY > 100) {
+                setShowHeader(true)
             }
         }
 
@@ -26,18 +23,19 @@ const Header = ({}) => {
     }, [])
 
     return (
-        <div className="w-full ">
+        <header className="w-full ">
             <div className="hidden lg:block">
-                <HeaderComponent type={HeaderType.DEFAULT} />
+                <HeaderComponent type={HeaderType.DEFAULT} menu={menu} />
                 <HeaderComponent
                     type={HeaderType.SCROLLED}
+                    menu={menu}
                     isScrolled={showHeader}
                 />
             </div>
             <div className="block lg:hidden">
-                <HeaderMobile config={menu} />
+                <HeaderMobile isScrolled={showHeader} menu={menu} />
             </div>
-        </div>
+        </header>
     )
 }
 

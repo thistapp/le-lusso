@@ -1,25 +1,17 @@
 /* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from 'react'
+import React, { ReactNode, useState } from 'react'
 import Logo from '../logo'
 import Link from 'next/link'
-
-interface SubMenuItem {
-    path: string
-    title: string
-}
-
-interface MenuItem {
-    path: string
-    title: string
-    submenu: SubMenuItem[]
-}
+import { HeaderType, MenuItem, SubMenuItem } from '@/models/header/header'
 
 interface Props {
-    config: MenuItem[]
+    menu: MenuItem[]
+    type?: HeaderType
+    isScrolled?: boolean
 }
 
-const HeaderMobile: React.FC<Props> = ({ config }) => {
+const HeaderMobile: React.FC<Props> = ({ menu, isScrolled = false }) => {
     const [open, setOpen] = useState(false)
     const [openSubmenus, setOpenSubmenus] = useState<string>('')
 
@@ -33,25 +25,53 @@ const HeaderMobile: React.FC<Props> = ({ config }) => {
     }
 
     return (
-        <div className="w-full nav-bar flex flex-row justify-between relative py-2 px-4">
-            <div className="object-center">
-                <span
-                    className={`material-symbols-outlined`}
+        <div className="relative">
+            <div className="w-full nav-bar flex flex-row justify-between relative py-2 px-4">
+                <div className="object-center">
+                    <span
+                        className={`material-symbols-outlined`}
+                        onClick={() => setOpen(!open)}
+                    >
+                        menu
+                    </span>
+                </div>
+                <div className="w-[6rem] relative -mt-3 -mr-3">
+                    <Logo />
+                </div>
+                <div
+                    className={`fixed inset-0 bg-black bg-opacity-50 transition-all duration-300 z-40 ${
+                        open ? 'opacity-100 visible' : 'opacity-0 invisible'
+                    }`}
                     onClick={() => setOpen(!open)}
-                >
-                    menu
-                </span>
+                />
             </div>
-            <div className="w-[6rem] relative -mt-3 -mr-3">
-                <Logo />
-            </div>
-
             <div
-                className={`fixed inset-0 bg-black bg-opacity-50 transition-all duration-300 z-40 ${
-                    open ? 'opacity-100 visible' : 'opacity-0 invisible'
+                className={`${
+                    isScrolled
+                        ? `w-full nav-bar fixed top-0 left-0 right-0 z-40 transition-transform duration-300 ease-in-out flex flex-row justify-between py-2 px-4 ${
+                              isScrolled ? 'translate-y-0' : '-translate-y-full'
+                          }`
+                        : 'hidden'
                 }`}
-                onClick={() => setOpen(!open)}
-            />
+            >
+                <div className="object-center">
+                    <span
+                        className={`material-symbols-outlined`}
+                        onClick={() => setOpen(!open)}
+                    >
+                        menu
+                    </span>
+                </div>
+                <div className="w-[6rem] relative -mt-3 -mr-3">
+                    <Logo />
+                </div>
+                <div
+                    className={`fixed inset-0 bg-black bg-opacity-50 transition-all duration-300 z-40 ${
+                        open ? 'opacity-100 visible' : 'opacity-0 invisible'
+                    }`}
+                    onClick={() => setOpen(!open)}
+                />
+            </div>
 
             <nav
                 className={`fixed top-0 left-0 w-80 max-w-full h-full bg-[#D1C7BC] shadow-xl transition-transform duration-300 z-40 ${
@@ -66,10 +86,10 @@ const HeaderMobile: React.FC<Props> = ({ config }) => {
                         close
                     </span>
                     <div className="flex flex-col w-full px-3 gap-3">
-                        {config?.map((o: MenuItem, i: number) => (
+                        {menu?.map((o: MenuItem, i: number) => (
                             <div className="relative" key={i}>
                                 <div
-                                    className={`text-lg text-[#714E39] font-bold capitalize tracking-wider uppercase`}
+                                    className={`text-lg text-[#714E39] font-bold tracking-wider uppercase`}
                                 >
                                     {o.submenu.length > 0 ? (
                                         <div
@@ -93,7 +113,12 @@ const HeaderMobile: React.FC<Props> = ({ config }) => {
                                             </p>
                                         </div>
                                     ) : (
-                                        <Link href={o.path}>{o.title}</Link>
+                                        <Link
+                                            href={o.path}
+                                            onClick={() => setOpen(!open)}
+                                        >
+                                            {o.title}
+                                        </Link>
                                     )}
                                 </div>
                                 <div
@@ -108,7 +133,10 @@ const HeaderMobile: React.FC<Props> = ({ config }) => {
                                             <li key={si.title}>
                                                 <Link
                                                     href={si.path}
-                                                    className="block text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg transition-colors duration-200 capitalize"
+                                                    className="block text-sm text-[#714E39] rounded-lg transition-colors duration-200 uppercase"
+                                                    onClick={() =>
+                                                        setOpen(!open)
+                                                    }
                                                 >
                                                     {si.title}
                                                 </Link>

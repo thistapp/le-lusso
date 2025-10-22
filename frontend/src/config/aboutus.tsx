@@ -5,20 +5,20 @@ import {
 
 export const AboutUsCollaps: GalleryInterface[] = [
     {
-        title: 'One-Stop, Hassle-Free Service',
-        desc: 'From concept to construction, Lelusso offers a fully integrated design and build solution. Our end-to-end service streamlines the entire process—saving you time, eliminating complexity, and ensuring a smooth, professional experience throughout.',
+        title: 'whyus.step1.title',
+        desc: 'whyus.step1.desc',
     },
     {
-        title: 'Spaces Designed to Enhance Productivity',
-        desc: 'We thoughtfully design every space to align with your lifestyle and support a more productive daily routine. Whether it’s a home office that boosts focus, efficient storage that reduces clutter, or natural lighting that uplifts your mood—we create environments that work for you.',
+        title: 'whyus.step2.title',
+        desc: 'whyus.step2.desc',
     },
     {
-        title: 'Meticulous Attention to Detail',
-        desc: 'At Lelusso, we believe that great design lives in the details. From materials and finishes to layout and functionality, every aspect is carefully considered to deliver timeless elegance with everyday practicality.',
+        title: 'whyus.step3.title',
+        desc: 'whyus.step3.desc',
     },
     {
-        title: 'Professional Team, Dedicated Support',
-        desc: 'Our experienced architects, designers, and project managers work closely with you at every stage. We provide clear communication, regular updates, and expert guidance to ensure your vision is brought to life with precision and care.',
+        title: 'whyus.step4.title',
+        desc: 'whyus.step4.desc',
     },
 ]
 

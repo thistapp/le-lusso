@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import IconArrow from '../../../public/icon/navigation/IconArrow'
 import { RotateEnum } from '@/Enum/enumRotate'
 
-const Collapsible = ({
+const Collapsibles = ({
     title,
     desc,
     onShow,
@@ -42,4 +42,4 @@ const Collapsible = ({
     )
 }
 
-export default Collapsible
+export default Collapsibles
