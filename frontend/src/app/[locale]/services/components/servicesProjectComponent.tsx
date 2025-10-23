@@ -51,6 +51,7 @@ const ServicesProjectComponent: React.FC<Props> = ({ data }) => {
                                             width={1200}
                                             height={500}
                                             className="w-auto h-[517px] object-cover"
+                                            loading="lazy"
                                         />
                                     </div>
                                 ) : (

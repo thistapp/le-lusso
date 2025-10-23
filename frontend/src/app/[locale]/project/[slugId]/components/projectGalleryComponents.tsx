@@ -1,13 +1,12 @@
 'use client'
 
-import { galleryData } from '@/models/portfolio'
 import { useEffect, useState, useRef } from 'react'
 import Slider from 'react-slick'
 import Image from 'next/image'
 import Modal from '@/components/elements/modal'
 
 interface Props {
-    gallery: galleryData[]
+    gallery: string[]
     customClass?: string
 }
 
@@ -15,9 +14,9 @@ const ProjectGalleryComponents: React.FC<Props> = ({
     gallery,
     customClass,
 }) => {
-    const [album, setAlbum] = useState<galleryData[]>([])
+    const [album, setAlbum] = useState<string[]>([])
     const [open, setOpen] = useState(false)
-    const [modalIMG, setModalIMG] = useState<galleryData>()
+    const [modalIMG, setModalIMG] = useState<string>()
     const sliderRef = useRef<Slider>(null)
 
     const settings = {
@@ -43,11 +42,11 @@ const ProjectGalleryComponents: React.FC<Props> = ({
         ],
     }
 
-    const onChangeThumbnail = (data: galleryData) => {
-        sliderRef.current?.slickGoTo(data.id)
+    const onChangeThumbnail = (index: number) => {
+        sliderRef.current?.slickGoTo(index)
     }
 
-    const onClickImage = (data: galleryData) => {
+    const onClickImage = (data: string) => {
         setModalIMG(data)
         setOpen(true)
     }
@@ -55,15 +54,15 @@ const ProjectGalleryComponents: React.FC<Props> = ({
     useEffect(() => {
         setAlbum(gallery)
     }, [])
-    // console.log(open)
+
     return (
         <div className={`w-full flex flex-col gap-2 ${customClass}`}>
             <Slider ref={sliderRef} {...settings} className="gallery-slider">
-                {gallery.map((item) => (
-                    <div className="p-4 lg:p-2" key={item.id}>
+                {gallery.map((o, i) => (
+                    <div className="p-4 lg:p-2" key={i}>
                         <Image
-                            src={item.image}
-                            alt={item.image}
+                            src={o}
+                            alt={o}
                             width={0}
                             height={0}
                             sizes="100vw"
@@ -72,7 +71,8 @@ const ProjectGalleryComponents: React.FC<Props> = ({
                                 height: 'auto',
                             }}
                             className="m-auto"
-                            onClick={() => onClickImage(item)}
+                            onClick={() => onClickImage(o)}
+                            loading="lazy"
                         />
                     </div>
                 ))}
@@ -81,8 +81,8 @@ const ProjectGalleryComponents: React.FC<Props> = ({
                 {album.map((item, i) => {
                     return (
                         <Image
-                            src={item.image}
-                            alt={item.image}
+                            src={item}
+                            alt={item}
                             width={0}
                             height={0}
                             sizes="100vw"
@@ -91,8 +91,9 @@ const ProjectGalleryComponents: React.FC<Props> = ({
                                 height: 'auto',
                             }}
                             className="mx-auto p-2 cursor-pointer"
-                            onClick={() => onChangeThumbnail(item)}
+                            onClick={() => onChangeThumbnail(i)}
                             key={i}
+                            loading="lazy"
                         />
                     )
                 })}
@@ -100,8 +101,8 @@ const ProjectGalleryComponents: React.FC<Props> = ({
             {open && (
                 <Modal show={open} onAction={() => setOpen(!open)}>
                     <Image
-                        src={modalIMG?.image || ''}
-                        alt={modalIMG?.image || ''}
+                        src={modalIMG || ''}
+                        alt={modalIMG || ''}
                         width={0}
                         height={0}
                         sizes="100vh"
@@ -110,6 +111,7 @@ const ProjectGalleryComponents: React.FC<Props> = ({
                             height: 'auto',
                         }}
                         className="m-auto"
+                        loading="lazy"
                     />
                 </Modal>
             )}

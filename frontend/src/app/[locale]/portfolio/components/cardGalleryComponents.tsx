@@ -1,7 +1,11 @@
+import { useClientLocale } from '@/hooks/getLocale'
+import { GalleryInterface } from '@/models/gallery/gallery'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const CardGalleryComponents = ({ data }: any) => {
+const CardGalleryComponents = ({ data }: { data: GalleryInterface }) => {
+    const locale = useClientLocale()
+
     return (
         <Link
             href={data.url}
@@ -9,10 +13,12 @@ const CardGalleryComponents = ({ data }: any) => {
         >
             <div className="item-card absolute w-full h-full z-10 content-center text-center">
                 <h3 className="text-xl">{data.title}</h3>
-                <p className="text-lg truncate w-5/6 mx-auto">{data.desc}</p>
+                <p className="text-lg truncate w-5/6 mx-auto">
+                    {locale === 'th' ? data.desc.th : data.desc.en}
+                </p>
             </div>
             <Image
-                src={data.gallery[0].image}
+                src={data.gallery[0]}
                 alt="thumbnails"
                 width={0}
                 height={0}
@@ -21,6 +27,7 @@ const CardGalleryComponents = ({ data }: any) => {
                     width: '100%',
                     height: 'auto',
                 }}
+                loading="lazy"
             />
         </Link>
     )

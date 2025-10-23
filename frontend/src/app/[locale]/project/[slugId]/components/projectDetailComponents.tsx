@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
 import { projectType } from '@/models/portfolio'
 import projectData from '@/config/projectDetail'
@@ -9,7 +8,6 @@ import ProjectGalleryComponents from './projectGalleryComponents'
 import { useClientLocale } from '@/hooks/getLocale'
 
 const ProjectDetailComponents = () => {
-    const t = useTranslations('detail')
     const locale = useClientLocale()
     const params = useParams()
     const slugId = params.slugId
@@ -36,27 +34,27 @@ const ProjectDetailComponents = () => {
                     <h1 className="font-bold text-xl underline uppercase mb-6 text-center lg:text-left">
                         {projectDetail.title}
                     </h1>
-                    <p className="font-bold text-xl">{t('projectOverview')}</p>
-                    <p className="text-justify">
-                        {locale === 'th'
-                            ? projectDetail.desc1.th
-                            : projectDetail.desc1.en}
-                    </p>
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html:
+                                locale === 'th'
+                                    ? projectDetail.desc1.th
+                                    : projectDetail.desc1.en,
+                        }}
+                    />
                 </div>
                 <div className="w-full lg:w-7/12 p-4">
                     <ProjectGalleryComponents gallery={projectDetail.gallery} />
                 </div>
             </div>
             <div className="w-full p-4 lg:py-6 px-4">
-                <p className="font-bold text-xl">{t('designHighlights')}</p>
-                <p
+                <div
                     dangerouslySetInnerHTML={{
                         __html:
                             locale === 'th'
                                 ? projectDetail.desc2.th
                                 : projectDetail.desc2.en,
                     }}
-                    className="px-5"
                 />
             </div>
         </div>

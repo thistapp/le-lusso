@@ -1,22 +1,24 @@
-export class gallerylistData {
-    id: number
-    image: string
+export class descType {
+    th: string
+    en: string
     constructor(data: any) {
-        this.id = data?.id || null
-        this.image = data?.image || ''
+        this.th = data?.th || ''
+        this.en = data?.en || ''
     }
 }
 
 export class GalleryInterface {
     title: string
-    desc: string
-    cate: string[]
-    gallery: gallerylistData[]
+    desc: descType
+    cate?: string[]
+    partcon?: string[]
+    gallery: string[]
     url: string
     constructor(data: any) {
         this.title = data?.title || ''
         this.desc = data?.desc || ''
         this.cate = data?.cate || []
+        this.partcon = data?.partcon || []
         this.gallery = data?.gallery || []
         this.url = data?.url || ''
     }

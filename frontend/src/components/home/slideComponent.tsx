@@ -36,6 +36,7 @@ const SlideComponent = (data: any) => {
                                 height={0}
                                 sizes="100vw"
                                 className="w-full h-[313px] lg:h-[100vh] "
+                                loading="lazy"
                             />
                         </div>
                     ))}

@@ -6,7 +6,6 @@ import StepIconComponents from './StepIconComponents'
 import {
     ConstructionMockup,
     ConstructionCategory,
-    ConstructionGallery,
 } from '@/config/constructionData'
 import GalleryComponent from '@/app/[locale]/portfolio/components/galleryComponents'
 
@@ -187,10 +186,10 @@ const PartConstructionComponent = () => {
                         <h2 className="uppercase p-4 border-2 border-black mx-auto text-2xl font-bold mb-8">
                             portfolio
                         </h2>
-                        <GalleryComponent
+                        {/* <GalleryComponent
                             data={ConstructionGallery}
                             isCate={cate}
-                        />
+                        /> */}
                     </div>
                     <div className=""></div>
                 </div>

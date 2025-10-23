@@ -15,6 +15,7 @@ const Footer = () => {
                                     alt="logo"
                                     width={'200'}
                                     height={'200'}
+                                    loading="lazy"
                                 />
                             </div>
                             <div className="px-6">
@@ -45,6 +46,7 @@ const Footer = () => {
                                         alt="facebook-icon"
                                         width={'35'}
                                         height={'35'}
+                                        loading="lazy"
                                     />
                                 </Link>
                                 <Link
@@ -58,6 +60,7 @@ const Footer = () => {
                                         alt="ig-icon"
                                         width={'35'}
                                         height={'35'}
+                                        loading="lazy"
                                     />
                                 </Link>
                                 <Link
@@ -69,6 +72,7 @@ const Footer = () => {
                                         alt="line-icon"
                                         width={'35'}
                                         height={'35'}
+                                        loading="lazy"
                                     />
                                 </Link>
                                 <Link
@@ -82,6 +86,7 @@ const Footer = () => {
                                         alt="tiktok-icon"
                                         width={'30'}
                                         height={'35'}
+                                        loading="lazy"
                                     />
                                 </Link>
                             </div>

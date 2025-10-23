@@ -36,29 +36,14 @@ const slideData: dataSlideType[] = [
 
 const portData: dataSlideType[] = [
     {
-        title: 'condo',
+        title: 'interior',
         image: '/gallery/categorySlide/condominium.jpg',
-        path: '/portfolio?type=condominium',
+        path: '/portfolio?type=interior',
     },
     {
-        title: 'house',
+        title: 'construction',
         image: '/gallery/categorySlide/house.jpg',
-        path: '/portfolio?type=house',
-    },
-    {
-        title: 'commercial building',
-        image: '/gallery/categorySlide/commercial-building.jpg',
-        path: '/portfolio?type=commercial-building',
-    },
-    {
-        title: 'townhouse',
-        image: '/gallery/categorySlide/townhouse.jpg',
-        path: '/portfolio?type=townhouse',
-    },
-    {
-        title: 'office',
-        image: '/gallery/categorySlide/office.jpg',
-        path: '/portfolio?type=office',
+        path: '/portfolio?type=construction',
     },
 ]
 

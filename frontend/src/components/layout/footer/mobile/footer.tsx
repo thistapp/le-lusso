@@ -10,6 +10,7 @@ const FooterMobile = () => {
                     alt="logo"
                     width={'150'}
                     height={'150'}
+                    loading="lazy"
                 />
             </div>
             <div className="w-full ">
@@ -31,6 +32,7 @@ const FooterMobile = () => {
                         alt="facebook-icon"
                         width={'35'}
                         height={'35'}
+                        loading="lazy"
                     />
                 </Link>
                 <Link
@@ -42,6 +44,7 @@ const FooterMobile = () => {
                         alt="ig-icon"
                         width={'35'}
                         height={'35'}
+                        loading="lazy"
                     />
                 </Link>
                 <Link href={'https://lin.ee/RkpqHbe'} target="_blank">
@@ -50,6 +53,7 @@ const FooterMobile = () => {
                         alt="line-icon"
                         width={'35'}
                         height={'35'}
+                        loading="lazy"
                     />
                 </Link>
                 <Link
@@ -61,6 +65,7 @@ const FooterMobile = () => {
                         alt="tiktok-icon"
                         width={'30'}
                         height={'35'}
+                        loading="lazy"
                     />
                 </Link>
             </div>

@@ -30,6 +30,7 @@ const DisplayTemplateDesktop: React.FC<Props> = ({ ...props }) => {
                         alt={props.t(props.data.title)}
                         fill
                         className="bg-cover object-cover object-center"
+                        loading="lazy"
                     />
                 )}
             </div>
@@ -43,6 +44,7 @@ const DisplayTemplateDesktop: React.FC<Props> = ({ ...props }) => {
                         alt={props.t(props.data.title)}
                         fill
                         className="w-full bg-cover object-cover object-bottom"
+                        loading="lazy"
                     />
                 ) : (
                     <DisplayDetailStep

@@ -55,8 +55,8 @@ const PortComponents = ({ data }: any) => {
                         {galleryIMG?.map((o: any, i: number) => (
                             <div className="" key={i}>
                                 <Image
-                                    src={o.image}
-                                    alt={o.id}
+                                    src={o}
+                                    alt={o}
                                     width={0}
                                     height={0}
                                     sizes="100vw"
@@ -64,6 +64,7 @@ const PortComponents = ({ data }: any) => {
                                         width: '100%',
                                         height: 'auto',
                                     }}
+                            loading="lazy"
                                 />
                             </div>
                         ))}

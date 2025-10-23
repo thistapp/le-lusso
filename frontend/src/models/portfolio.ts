@@ -1,12 +1,3 @@
-export class galleryData {
-    id: number
-    image: string
-    constructor(data: any) {
-        this.id = data?.id || null
-        this.image = data?.image || ''
-    }
-}
-
 export class descType {
     th: string
     en: string
@@ -22,8 +13,8 @@ export class projectType {
     titleDesc: string
     desc1: descType
     desc2: descType
-    cate: string[]
-    gallery: galleryData[]
+    cate?: string[]
+    gallery: string[]
     constructor(data: any) {
         this.title = data?.title || ''
         this.titleDesc = data?.titleDesc || ''

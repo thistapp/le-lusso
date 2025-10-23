@@ -39,6 +39,7 @@ const PortComponents = (port: any) => {
                                 height={0}
                                 sizes="100vw"
                                 style={{ width: '20%', height: 'auto' }}
+                                loading="lazy"
                             />
                         </div>
                         <div className="text-center">
@@ -80,6 +81,7 @@ const PortComponents = (port: any) => {
                                         width: '100%',
                                         height: '505px',
                                     }}
+                                    loading="lazy"
                                 />
                             </div>
                         ))}

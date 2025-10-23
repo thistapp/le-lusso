@@ -55,24 +55,12 @@
         "path": "/portfolio",
         "submenu": [
             {
-                "title": "condominium",
-                "path": "/portfolio?type=condominium"
+                "title": "interior",
+                "path": "/portfolio?type=interior"
             },
             {
-                "title": "house",
-                "path": "/portfolio?type=house"
-            },
-            {
-                "title": "commercial building",
-                "path": "/portfolio?type=commercial-building"
-            },
-            {
-                "title": "townhouse",
-                "path": "/portfolio?type=townhouse"
-            },
-            {
-                "title": "office",
-                "path": "/portfolio?type=office"
+                "title": "construction",
+                "path": "/portfolio?type=construction"
             }
         ]
     },

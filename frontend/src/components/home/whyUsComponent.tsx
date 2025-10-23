@@ -56,6 +56,7 @@ const WhyUsComponent = (data: any) => {
                             height={0}
                             sizes="100vw"
                             className="w-full lg:w-10/12"
+                            loading="lazy"
                         />
                     </Fade>
                 </div>

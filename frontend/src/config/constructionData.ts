@@ -33,6 +33,7 @@ export const ConstructionCategory: CategoryConstructionType[] = [
     {
         title: 'Glass',
         value: 'glass',
+        width: undefined,
     },
     {
         title: 'Stainless Steel',
@@ -127,98 +128,5 @@ export const ConstructionMockup: ConstructionData[] = [
         value: 'work-flow',
         price: '',
         desc: '<p><ul class="list-disc relative left-4"><li><span class="font-bold">Initial Contact (การติดต่อเริ่มต้น)</span></br>ลูกค้าติดต่อ Lelusso ผ่านช่องทางที่สะดวก (เช่น เว็บไซต์, โทรศัพท์, Line, หรือ Social Media) ทีมงาน Lelusso นัดหมายเพื่อพูดคุยเบื้องต้นเกี่ยวกับความต้องการของลูกค้า</li><li><span class="font-bold">Consultation (การให้คำปรึกษา)</span></br>นัดหมายเพื่อพูดคุยรายละเอียดเพิ่มเติมแบบตัวต่อตัว หรือผ่านออนไลน์ สำรวจความต้องการ เช่น สไตล์การออกแบบ, งบประมาณ, และกำหนดการ ทีม Lelusso อธิบายกระบวนการทำงานและขั้นตอนทั้งหมด จัดทำใบเสนอราคาเบื้องต้นสำหรับบริการออกแบบพร้อมก่อสร้าง</li><li><span class="font-bold">Site Survey (สำรวจสถานที่)</span></br>นัดหมายทีม Lelusso เข้าสำรวจพื้นที่ก่อสร้างหรือปรับปรุง (ถ้ามี) ถ่ายรูปและวัดขนาดพื้นที่อย่างละเอียด จัดทำรายงานเบื้องต้นเกี่ยวกับพื้นที่สำหรับการออกแบบ</li><li><span class="font-bold">Concept Design (ออกแบบแนวคิด)</span></br>ทีมออกแบบของ Lelusso นำเสนอแนวคิดการออกแบบ (Concept Design) พร้อม Mood Board ลูกค้าร่วมให้ความคิดเห็นและเลือกแนวทางที่ต้องการ ทำการปรับแก้ไขแนวคิดจนกว่าจะตอบโจทย์ลูกค้า</li><li><span class="font-bold">Detailed Design (ออกแบบรายละเอียด)</span></br>จัดทำแบบก่อสร้าง (Construction Drawings) และแบบ 3D Visualization สรุปรายการวัสดุ (Material Specification) จัดทำ Timeline การก่อสร้างที่ชัดเจน นำเสนอให้ลูกค้าตรวจสอบและอนุมัติ</li><li><span class="font-bold">Contract & Agreement (เซ็นสัญญา)</span></br>จัดทำสัญญาการก่อสร้างที่ครอบคลุมรายละเอียดทั้งหมด ลูกค้าตรวจสอบและเซ็นสัญญา ชำระเงินงวดแรกตามเงื่อนไขที่กำหนดในสัญญา</li><li><span class="font-bold">Construction Phase (ขั้นตอนการก่อสร้าง)</span></br>เริ่มดำเนินการก่อสร้างตามแผนงาน ทีม Lelusso ประสานงานและบริหารโครงการทุกขั้นตอน มีการรายงานความคืบหน้าเป็นระยะ พร้อมการตรวจสอบคุณภาพงาน</li><li><span class="font-bold">Final Inspection & Handover (ตรวจสอบและส่งมอบงาน)</span></br>ลูกค้าตรวจสอบความเรียบร้อยของงานก่อสร้าง ทีม Lelusso ดำเนินการแก้ไข (ถ้ามี) เพื่อให้ได้งานที่สมบูรณ์แบบ ส่งมอบงานก่อสร้าง พร้อมเอกสารและคำแนะนำการใช้งาน/ดูแลรักษา</li><li><span class="font-bold">After-Sales Service (บริการหลังการขาย)</span></br>ให้การรับประกันตามเงื่อนไขในสัญญา ลูกค้าสามารถติดต่อทีม Lelusso หากมีคำถามหรือปัญหาหลังการส่งมอบ เสนอการบำรุงรักษาเพิ่มเติมหรือบริการเสริมในอนาคต</li></ul></p>',
-    },
-]
-
-export const ConstructionGallery: GalleryInterface[] = [
-    {
-        title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        gallery: [
-            {
-                id: 0,
-                image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_12.jpg',
-            },
-        ],
-        url: 'test1',
-        cate: [
-            'renovation',
-            'buildin',
-            'partitioning',
-            'painting',
-            'ceiling',
-            'glass',
-            'stainless-steel',
-            'structure-demolition',
-            'maintenance',
-            'flooring-and-tiling',
-            'work-flow',
-        ],
-    },
-    {
-        title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        gallery: [
-            {
-                id: 0,
-                image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_16.jpg',
-            },
-        ],
-        url: 'test',
-        cate: ['maintenance'],
-    },
-    {
-        title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        gallery: [
-            {
-                id: 0,
-                image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_22.jpg',
-            },
-        ],
-        url: 'test',
-        cate: ['partitioning', 'flooring-and-tiling'],
-    },
-    {
-        title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        gallery: [
-            {
-                id: 0,
-                image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_25.jpg',
-            },
-        ],
-        url: 'test',
-        cate: ['ceiling', 'glass', 'stainless-steel'],
-    },
-    {
-        title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        gallery: [
-            {
-                id: 0,
-                image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_24.jpg',
-            },
-        ],
-        url: 'test',
-        cate: ['renovation', 'buildin', 'partitioning', 'flooring-and-tiling'],
-    },
-    {
-        title: 'Lorem Ipsum1',
-        desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        gallery: [
-            {
-                id: 0,
-                image: '/gallery/port2/LINE_ALBUM_Rowdy_๒๔๐๘๒๕_4.jpg',
-            },
-        ],
-        url: 'test',
-        cate: [
-            'renovation',
-            'ceiling',
-            'glass',
-            'flooring-and-tiling',
-            'work-flow',
-        ],
     },
 ]

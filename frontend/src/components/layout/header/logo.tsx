@@ -18,6 +18,7 @@ const Logo = () => {
                     height={0}
                     sizes="100vw"
                     className="w-full relative z-50"
+                    loading="lazy"
                 />
             </Link>
         </>

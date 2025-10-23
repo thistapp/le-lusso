@@ -56,6 +56,7 @@ const AboutusComponent: FC<Props> = ({ data, listData }) => {
                                 width: '60%',
                                 height: 'auto',
                             }}
+                            loading="lazy"
                         />
                     </div>
                 </section>
@@ -99,6 +100,7 @@ const AboutusComponent: FC<Props> = ({ data, listData }) => {
                                     width={500}
                                     height={500}
                                     className="w-full h-auto rounded-lg object-cover"
+                                    loading="lazy"
                                 />
                             </div>
                             <div className="">
@@ -108,6 +110,7 @@ const AboutusComponent: FC<Props> = ({ data, listData }) => {
                                     width={500}
                                     height={500}
                                     className="w-full h-auto rounded-lg object-cover mt-10"
+                                    loading="lazy"
                                 />
                             </div>
                         </div>
@@ -122,6 +125,7 @@ const AboutusComponent: FC<Props> = ({ data, listData }) => {
                         width={1000}
                         height={1000}
                         className="absolute -top-[24rem] -right-[25rem] w-[10rem] lg:w-[60rem] opacity-30 rotate-45"
+                        loading="lazy"
                     />
                     <div className="max-w-7xl w-full mx-auto justify-center relative flex flex-col gap-16">
                         <div className="w-full relative">

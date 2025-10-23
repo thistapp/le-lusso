@@ -22,6 +22,7 @@ const CardComponents: React.FC<Props> = ({ ...props }) => {
                         width={500}
                         height={500}
                         className="w-full h-[250px] object-cover rounded-t-lg"
+                        loading="lazy"
                     />
                 )}
                 <div className="text-[#714E39] px-3 py-5">

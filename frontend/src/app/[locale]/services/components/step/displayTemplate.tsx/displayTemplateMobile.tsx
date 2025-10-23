@@ -23,6 +23,7 @@ const DisplayTemplateMobile: React.FC<Props> = ({ ...props }) => {
                 height={200}
                 alt={props.data.title}
                 className="w-full object-cover section-step-image"
+                loading="lazy"
             />
             <DisplayDetailStep
                 title={props.t(props.data.title)}
