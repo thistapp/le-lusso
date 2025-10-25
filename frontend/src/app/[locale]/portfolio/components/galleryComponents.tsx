@@ -12,28 +12,26 @@ const GalleryComponent = ({
     isCate: string
 }) => {
     const pathname = usePathname()
-    console.log(pathname.match('construction'))
+
     const filterData = (value: any) => {
-        console.log(value.partcon)
-        console.log(value.partcon !== '' && value.partcon !== undefined)
         if (pathname.match('construction')) {
-            // if (!isCate) {
-            //     return true
-            // }
+            if (value.partcon !== undefined) {
+                return value.partcon.some((cate: any) => cate === isCate)
+            }
         } else {
             if (!isCate) {
                 return true
             }
-            return value.some((cate: any) => cate === isCate)
+            return value.cate.some((cate: any) => cate === isCate)
         }
     }
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="masonry gap-4 p-3">
             {data
                 .filter((cate: any) => filterData(cate))
                 .map((o: any, i: number) => (
-                    <div className="group cursor-auto px-4" key={i}>
+                    <div className="group cursor-auto pb-3" key={i}>
                         <CardGalleryComponents data={o} />
                     </div>
                 ))}

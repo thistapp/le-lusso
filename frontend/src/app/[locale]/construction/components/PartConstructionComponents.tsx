@@ -115,7 +115,7 @@ const PartConstructionComponent = () => {
         },
         []
     )
-    console.log(cate)
+
     return (
         <ConstrucContext
             value={{
@@ -179,7 +179,7 @@ const PartConstructionComponent = () => {
                             }
                         )}
                     </div>
-                    <div className="max-w-7xl mx-auto flex flex-col w-full justify-center mt-6">
+                    <div className="max-w-7xl mx-auto flex flex-col w-full justify-center my-6">
                         <h2 className="uppercase p-4 border-2 border-black mx-auto text-2xl font-bold mb-8">
                             portfolio
                         </h2>

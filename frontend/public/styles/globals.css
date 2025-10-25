@@ -355,6 +355,9 @@ body {
     transition: 0.3s;
 } */
 
+.masonry {
+    columns: 300px;
+}
 @keyframes show {
     from {
         opacity: 0;

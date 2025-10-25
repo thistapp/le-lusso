@@ -4,8 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const CardGalleryComponents = ({ data }: { data: GalleryInterface }) => {
-    const locale = useClientLocale()
-
     return (
         <Link
             href={data.url}

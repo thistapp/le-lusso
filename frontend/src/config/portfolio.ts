@@ -45,7 +45,7 @@ const PortData: GalleryInterface[] = [
             en: `This home renovation project reimagines a classic residence with a refined contemporary elegance. The updated exterior balances bold architectural lines and traditional detailing, resulting in a facade that feels sophisticated yet welcoming.`,
         },
         cate: ['construction'],
-        partcon: [],
+        partcon: ['buildin'],
         gallery: ['/gallery/portfolio/ananda-sportlife-home/01_OUTDOOR_1.jpg'],
         url: 'project/ananda-sportlife-home-renovation',
     },
@@ -79,7 +79,7 @@ const PortData: GalleryInterface[] = [
         cate: ['construction'],
         partcon: [
             'renovation',
-            'buildin',
+            'partitioning',
             'painting',
             'ceiling',
             'glass',
