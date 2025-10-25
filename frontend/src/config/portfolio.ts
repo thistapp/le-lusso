@@ -13,7 +13,7 @@ const portCategory: dataCate[] = [
     },
 ]
 
-const portData: GalleryInterface[] = [
+const PortData: GalleryInterface[] = [
     {
         title: 'Aspire Pinklao Project',
         desc: {
@@ -21,7 +21,9 @@ const portData: GalleryInterface[] = [
             en: `Condo K’nut brings the timeless elegance of Mid-Century Modern design into contemporary living. Clean silhouettes, rich wood textures, and thoughtfully curated details come together to create a sophisticated yet inviting atmosphere.`,
         },
         cate: ['interior'],
-        gallery: [''],
+        gallery: [
+            '/gallery/portfolio/aspire-pinklao-project/LINE_ALBUM_FIRST__KHUN_NUT_250628_1.jpg',
+        ],
         url: 'project/aspire-pinklao-project',
     },
     {
@@ -31,7 +33,9 @@ const portData: GalleryInterface[] = [
             en: `This Millennium Residence renovation embodies sophisticated contemporary living with clean lines, natural textures, and a refined palette. Each area is thoughtfully crafted to elevate everyday moments with understated luxury and functional design.`,
         },
         cate: ['interior'],
-        gallery: [''],
+        gallery: [
+            '/gallery/portfolio/millennium-residence/LINE_ALBUM_Renovate_Millennium_Residence_250628_1.jpg',
+        ],
         url: 'project/contemporary-elegance-redefined',
     },
     {
@@ -42,7 +46,7 @@ const portData: GalleryInterface[] = [
         },
         cate: ['construction'],
         partcon: [],
-        gallery: [''],
+        gallery: ['/gallery/portfolio/ananda-sportlife-home/01_OUTDOOR_1.jpg'],
         url: 'project/ananda-sportlife-home-renovation',
     },
     {
@@ -63,7 +67,7 @@ const portData: GalleryInterface[] = [
             'maintenance',
             'flooring-and-tiling',
         ],
-        gallery: [''],
+        gallery: ['/gallery/portfolio/baan-klang-krung-residence/img_7845.jpg'],
         url: 'project/baan-klang-krung-residence',
     },
     {
@@ -83,7 +87,9 @@ const portData: GalleryInterface[] = [
             'structure-demolition',
             'flooring-and-tiling',
         ],
-        gallery: [''],
+        gallery: [
+            '/gallery/portfolio/mbk-center-renovation-project/IMG_8329.jpg',
+        ],
         url: 'project/mbk-center-renovation-project',
     },
     {
@@ -102,7 +108,7 @@ const portData: GalleryInterface[] = [
             'structure-demolition',
             'flooring-and-tiling',
         ],
-        gallery: [''],
+        gallery: ['/gallery/portfolio/dhamma-mongkol-temple/IMG_8399.jpg'],
         url: 'project/dhamma-mongkol-temple',
     },
     {
@@ -121,7 +127,9 @@ const portData: GalleryInterface[] = [
             'structure-demolition',
             'flooring-and-tiling',
         ],
-        gallery: [''],
+        gallery: [
+            '/gallery/portfolio/patthanagarn-four-storey-single-house/IMG_6474.jpg',
+        ],
         url: 'project/patthanagarn-four-storey-single-house',
     },
     {
@@ -139,7 +147,9 @@ const portData: GalleryInterface[] = [
             'stainless-steel',
             'flooring-and-tiling',
         ],
-        gallery: [''],
+        gallery: [
+            '/gallery/portfolio/bukarn-yothin-pattana-residence/IMG_7198.jpg',
+        ],
         url: 'project/bukarn-yothin-pattana-residence',
     },
     {
@@ -157,7 +167,9 @@ const portData: GalleryInterface[] = [
             'glass',
             'flooring-and-tiling',
         ],
-        gallery: [''],
+        gallery: [
+            '/gallery/portfolio/niche-mono-ratchavipha-condominium/IMG_4781.jpg',
+        ],
         url: 'project/niche-mono-ratchavipha-condominium',
     },
     {
@@ -176,7 +188,7 @@ const portData: GalleryInterface[] = [
             'stainless-steel',
             'flooring-and-tiling',
         ],
-        gallery: [''],
+        gallery: ['/gallery/portfolio/siamsnus-silom/IMG_4905.jpg'],
         url: 'project/siamSnus-silom',
     },
     {
@@ -197,13 +209,13 @@ const portData: GalleryInterface[] = [
             'maintenance',
             'flooring-and-tiling',
         ],
-        gallery: [''],
+        gallery: ['/gallery/portfolio/ananda-residence/DSC04652.jpg'],
         url: 'project/siamSnus-silom',
     },
 ]
 
 const exportedObject = {
-    portData,
+    PortData,
     portCategory,
 }
 

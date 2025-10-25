@@ -30,7 +30,7 @@ const PortComponents = (port: any) => {
             {/* <div className="le-lusso-caption"> */}
             <div className="grid grid-cols-12 ">
                 <div className="col-span-full py-8 px-4 bg-[#CDC3B8]">
-                    <Fade cascade>
+                    <Fade cascade triggerOnce>
                         <div className="place-items-center">
                             <Image
                                 src={'/logo/logo_text_black.png'}

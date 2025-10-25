@@ -12,10 +12,10 @@ const CardGalleryComponents = ({ data }: { data: GalleryInterface }) => {
             className="relative overflow-hidden rounded-lg transition-all duration-300 transform hover:scale-[1.02] h-full"
         >
             <div className="item-card absolute w-full h-full z-10 content-center text-center">
-                <h3 className="text-xl">{data.title}</h3>
-                <p className="text-lg truncate w-5/6 mx-auto">
+                <h3 className="text-lg">{data.title}</h3>
+                {/* <p className="text-lg truncate w-5/6 mx-auto">
                     {locale === 'th' ? data.desc.th : data.desc.en}
-                </p>
+                </p> */}
             </div>
             <Image
                 src={data.gallery[0]}

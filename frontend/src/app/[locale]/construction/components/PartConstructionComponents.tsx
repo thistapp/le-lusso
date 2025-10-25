@@ -1,12 +1,15 @@
 'use client'
 
 import { useCallback, useState } from 'react'
+import { useTranslations } from 'next-intl'
+import TitleComponents from '@/components/elements/titleComponents'
 import { ConstrucContext } from '../Utils/ConstructionContext'
 import StepIconComponents from './StepIconComponents'
 import {
     ConstructionMockup,
     ConstructionCategory,
 } from '@/config/constructionData'
+import data from '@/config/portfolio'
 import GalleryComponent from '@/app/[locale]/portfolio/components/galleryComponents'
 
 import IconBuildIn from '../../../../../public/icon/partConstruction/IconBuildin'
@@ -19,9 +22,9 @@ import IconStainlessSteel from '../../../../../public/icon/partConstruction/Icon
 import IconStructureDemolition from '../../../../../public/icon/partConstruction/IconStructureDemolition'
 import IconMaintenance from '../../../../../public/icon/partConstruction/IconMaintenance'
 import IconFlooringAndTiling from '../../../../../public/icon/partConstruction/IconFlooringAndTiling'
-import TitleComponents from '@/components/elements/titleComponents'
 
 const PartConstructionComponent = () => {
+    const t = useTranslations('partCon')
     const [cate, setCate] = useState('')
 
     const handleIcon = useCallback(
@@ -112,7 +115,7 @@ const PartConstructionComponent = () => {
         },
         []
     )
-
+    console.log(cate)
     return (
         <ConstrucContext
             value={{
@@ -127,13 +130,7 @@ const PartConstructionComponent = () => {
                 />
                 <div className="max-w-7xl mx-auto w-full flex flex-col gap-3">
                     <div className="px-12 text-center my-12">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            {/* industry's standard dummy text ever since the 1500s, */}
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
-                        </p>
+                        <p>{t('desc')}</p>
                     </div>
                     <div className="w-full">
                         <StepIconComponents
@@ -186,12 +183,8 @@ const PartConstructionComponent = () => {
                         <h2 className="uppercase p-4 border-2 border-black mx-auto text-2xl font-bold mb-8">
                             portfolio
                         </h2>
-                        {/* <GalleryComponent
-                            data={ConstructionGallery}
-                            isCate={cate}
-                        /> */}
+                        <GalleryComponent data={data.PortData} isCate={cate} />
                     </div>
-                    <div className=""></div>
                 </div>
             </div>
         </ConstrucContext>

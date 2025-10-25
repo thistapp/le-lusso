@@ -14,7 +14,7 @@ const WhyUsComponent = (data: any) => {
                 <div className="col-start-1 col-span-full lg:col-start-2 lg:col-span-5">
                     <div className="p-12">
                         <div className="mb-12">
-                            <Fade direction="left">
+                            <Fade direction="left" triggerOnce>
                                 <h2 className="text-xl lg:text-4xl">
                                     {data.data.title}
                                 </h2>
@@ -23,12 +23,13 @@ const WhyUsComponent = (data: any) => {
                                 direction="left"
                                 delay={300}
                                 className="border border-solid border-[#D1C7BC] absolute w-[22em] lg:w-[35em] left-0 mt-3"
+                                triggerOnce
                             >
                                 <div className="" />
                             </Fade>
                         </div>
                         <div className="flex flex-col gap-8">
-                            <Fade direction="left" delay={400}>
+                            <Fade direction="left" delay={400} triggerOnce>
                                 <div
                                     className=" whitespace-pre-line text-base"
                                     dangerouslySetInnerHTML={{
@@ -48,7 +49,7 @@ const WhyUsComponent = (data: any) => {
                     </div>
                 </div>
                 <div className="col-span-full lg:col-span-6">
-                    <Fade>
+                    <Fade triggerOnce>
                         <Image
                             src={'/gallery/LINE_ALBUM_ฝาก_241129_1.jpg'}
                             alt=""
@@ -61,7 +62,7 @@ const WhyUsComponent = (data: any) => {
                     </Fade>
                 </div>
             </div>
-            <Fade className="w-full">
+            <Fade className="w-full" triggerOnce>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.645322442667!2d100.49271549999999!3d13.618460899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a39978f74e61%3A0x9e19c3ce70aef06c!2z4Lia4LmJ4Liy4LiZ4Lie4Li04Lio4Liy4LilIOC4m-C4o-C4sOC4iuC4suC4reC4uOC4l-C4tOC4qA!5e0!3m2!1sth!2sth!4v1732955331497!5m2!1sth!2sth"
                     height="450"

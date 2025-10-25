@@ -135,6 +135,7 @@ const AboutusComponent: FC<Props> = ({ data, listData }) => {
                             <Fade
                                 delay={300}
                                 className="border border-solid border-[#D1C7BC] absolute w-[20em] lg:w-[35em] -left-24 mt-3"
+                                triggerOnce
                             >
                                 <div className="" />
                             </Fade>

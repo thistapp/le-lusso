@@ -77,7 +77,11 @@ const ProjectGalleryComponents: React.FC<Props> = ({
                     </div>
                 ))}
             </Slider>
-            <div className="hidden lg:flex gap-4 overflow-x-scroll">
+            <div
+                className={`hidden lg:flex gap-4 ${
+                    album.length > 3 && 'overflow-x-scroll'
+                }`}
+            >
                 {album.map((item, i) => {
                     return (
                         <Image

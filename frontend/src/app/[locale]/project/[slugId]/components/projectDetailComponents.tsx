@@ -12,9 +12,10 @@ const ProjectDetailComponents = () => {
     const params = useParams()
     const slugId = params.slugId
     const [projectDetail, setProjectDetail] = useState<projectType>()
-    const [loading, setLoading] = useState<boolean>(false)
+    const [loading, setLoading] = useState<boolean>(true)
 
     useEffect(() => {
+        setLoading(false)
         const filterProject = projectData.filter(
             (item) => item.id === slugId
         )[0]
@@ -26,7 +27,31 @@ const ProjectDetailComponents = () => {
     }, [])
 
     if (!projectDetail) return <div></div>
-    // console.log(projectDetail)
+
+    if (loading && !projectDetail)
+        return (
+            <div className="max-w-7xl mx-auto w-full flex flex-col gap-3 animate-pulse">
+                <div className="w-full flex lg:flex-wrap flex-wrap-reverse relative">
+                    <div className="w-full lg:w-5/12 p-4 self-start sticky top-20 lg:pt-10">
+                        <div className="h-2.5 bg-gray-400 rounded-full w-72 mb-4" />
+                        <div className="h-2 bg-gray-400 rounded-full w-56 mb-4" />
+                        <div className="h-2 bg-gray-400 rounded-full w-52 mb-4" />
+                        <div className="h-2 bg-gray-400 rounded-full w-48 mb-4" />
+                        <div className="h-2 bg-gray-400 rounded-full w-48 mb-4" />
+                    </div>
+                    <div className="w-full lg:w-7/12 p-4">
+                        <div className="h-[500px] bg-gray-400 rounded-md w-full mb-4" />
+                    </div>
+                </div>
+                <div className="w-full p-4 lg:py-6 px-4">
+                    <div className="h-2.5 bg-gray-400 rounded-full w-4/12 mb-4" />
+                    <div className="h-2 bg-gray-400 rounded-full w-6/12 mb-4" />
+                    <div className="h-2 bg-gray-400 rounded-full w-5/12 mb-4" />
+                    <div className="h-2 bg-gray-400 rounded-full w-3/12 mb-4" />
+                </div>
+            </div>
+        )
+
     return (
         <div className="max-w-7xl mx-auto w-full flex flex-col gap-3">
             <div className="w-full flex lg:flex-wrap flex-wrap-reverse relative">

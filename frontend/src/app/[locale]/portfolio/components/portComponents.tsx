@@ -44,7 +44,7 @@ const PortComponents = ({ data }: any) => {
                     </h1>
                     <CategoryComponents data={data} />
                     {data && (
-                        <GalleryComponent data={data?.portData} isCate={cate} />
+                        <GalleryComponent data={data?.PortData} isCate={cate} />
                     )}
                     <div className="p-3 grid-port"></div>
                 </div>

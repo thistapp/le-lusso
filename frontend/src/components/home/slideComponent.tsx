@@ -19,7 +19,7 @@ const SlideComponent = (data: any) => {
 
     return (
         <section>
-            <Fade className="new-slide">
+            <Fade className="new-slide" triggerOnce>
                 <Slider {...settings}>
                     {data.slide?.map((o: any, i: number) => (
                         <div className="w-full relative" key={i}>
