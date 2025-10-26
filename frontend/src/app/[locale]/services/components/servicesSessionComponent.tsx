@@ -1,6 +1,7 @@
 import CardComponent from '@/components/elements/card'
 import { ServiceCardType } from '@/models/services/servicestype'
 import { useTranslations } from 'next-intl'
+import { Fade } from 'react-awesome-reveal'
 import Slider from 'react-slick'
 
 interface Props {
@@ -61,7 +62,11 @@ const ServicesSession: React.FC<Props> = ({ ...props }) => {
         ],
     }
     return (
-        <div className="w-full my-6 lg:my-12 slide-services-container">
+        <Fade
+            className="w-full my-6 lg:my-12 slide-services-container"
+            direction="up"
+            triggerOnce
+        >
             <h1 className="text-2xl lg:text-5xl font-bold text-center uppercase underline  mb-4">
                 {t('title')}
             </h1>
@@ -76,7 +81,7 @@ const ServicesSession: React.FC<Props> = ({ ...props }) => {
                     />
                 ))}
             </Slider>
-        </div>
+        </Fade>
     )
 }
 

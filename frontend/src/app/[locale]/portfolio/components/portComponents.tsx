@@ -5,6 +5,7 @@ import { PortContext } from '../Utils/portfolioContext'
 import CategoryComponents from './categoryComponents'
 import GalleryComponent from './galleryComponents'
 import { useSearchParams } from 'next/navigation'
+import { Fade } from 'react-awesome-reveal'
 
 const PortComponents = ({ data }: any) => {
     const searchParams = useSearchParams()
@@ -38,7 +39,7 @@ const PortComponents = ({ data }: any) => {
             }}
         >
             <div className="max-w-6xl mx-auto grid grid-cols-12">
-                <div className="col-span-full">
+                <Fade className="col-span-full">
                     <h1 className="text-3xl text-center uppercase font-bold">
                         PortFolio
                     </h1>
@@ -47,7 +48,7 @@ const PortComponents = ({ data }: any) => {
                         <GalleryComponent data={data?.PortData} isCate={cate} />
                     )}
                     <div className="p-3 grid-port"></div>
-                </div>
+                </Fade>
             </div>
             {/* {open && (
                 <Modal show={open} onAction={() => setOpen(!open)}>

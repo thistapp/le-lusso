@@ -4,13 +4,12 @@ import { CategoryConstructionType } from '@/models/partconstruction/CategoryCons
 import { useContext, useEffect, useState } from 'react'
 import { ConstrucContext } from '../Utils/ConstructionContext'
 import { useSearchParams } from 'next/navigation'
+import { getIconPartConstruction } from '@/hooks/getIconPartCon'
 
 const StepIconComponents = ({
     category,
-    IconFunc,
 }: {
     category: CategoryConstructionType[]
-    IconFunc: (value: string) => React.ReactNode
 }) => {
     const searchParams = useSearchParams()
     const search = searchParams.get('type')
@@ -49,7 +48,7 @@ const StepIconComponents = ({
                             } border hover:bg-white hover:text-black hover:border-black transition-[0.3s] shadow-lg mb-3`}
                             onClick={() => handleChange(o.value)}
                         >
-                            {IconFunc(o.value)}
+                            {getIconPartConstruction(o.value)}
                         </div>
                         <p>{o.title}</p>
                     </div>
@@ -76,7 +75,7 @@ const StepIconComponents = ({
                                         : 'bg-[#dfd1af] border-[#dfd1af]'
                                 } transition-[0.3s] shadow-lg mb-3`}
                             >
-                                {IconFunc(o.value)}
+                                {getIconPartConstruction(o.value)}
                             </div>
                             <p className="text-xs">{o.title}</p>
                         </div>

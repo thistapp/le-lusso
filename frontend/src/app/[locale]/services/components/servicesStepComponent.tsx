@@ -3,6 +3,7 @@ import { ServiceStepType } from '@/models/services/servicestype'
 import DisplayTemplateDesktop from './step/displayTemplate.tsx/displayTemplateDesktop'
 import DisplayTemplateMobile from './step/displayTemplate.tsx/displayTemplateMobile'
 import { useTranslations } from 'next-intl'
+import { Fade } from 'react-awesome-reveal'
 
 interface Props {
     // step: number
@@ -13,7 +14,7 @@ const ServicesStepComponent: React.FC<Props> = ({ data }) => {
     const t = useTranslations('services')
 
     return (
-        <div className="w-full flex flex-col">
+        <Fade className="w-full flex flex-col" direction="up" triggerOnce>
             <h1 className="text-2xl lg:text-5xl font-bold text-center uppercase underline mt-12 mb-4">
                 {t('title')}
             </h1>
@@ -35,7 +36,7 @@ const ServicesStepComponent: React.FC<Props> = ({ data }) => {
                     </div>
                 )
             })}
-        </div>
+        </Fade>
     )
 }
 

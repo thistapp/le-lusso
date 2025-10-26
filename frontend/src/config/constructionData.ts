@@ -62,7 +62,7 @@ export const ConstructionCategory: CategoryConstructionType[] = [
     },
 ]
 
-export const ConstructionMockup: ConstructionData[] = [
+export const Construction: ConstructionData[] = [
     {
         title: 'renovation',
         value: 'renovation',
