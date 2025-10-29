@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # 1. PostgreSQL Database Service
+  postgres:
+    image: postgres:16-alpine # ใช้อิมเมจขนาดเล็กและเสถียร
+    container_name: le_lusso_nextauth_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: le_lusso_user # เปลี่ยนชื่อ User ให้ต่างจากค่า default
+      POSTGRES_PASSWORD: mysecurepassword123 # กำหนดรหัสผ่านใหม่ที่ปลอดภัย
+      POSTGRES_DB: le_lusso_db 
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck: # เพิ่ม Healthcheck เพื่อให้ Docker ทราบว่า DB พร้อมใช้งานเมื่อใด
+      test: ["CMD-SHELL", "pg_isready -U nextuser"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 2. pgAdmin Management Interface
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: nextauth_pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_LISTEN_PORT: 80
+    ports:
+      - "5050:80" # เข้าถึงที่ localhost:5050
+    depends_on:
+      postgres:
+        condition: service_healthy # pgAdmin จะรอจนกว่า Postgres จะมีสถานะ 'healthy'
+
+# 3. Docker Volumes (ใช้เก็บข้อมูลให้คงอยู่)
+volumes:
+  postgres-data:
