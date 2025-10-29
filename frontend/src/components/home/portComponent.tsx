@@ -44,7 +44,9 @@ const PortComponents = (port: any) => {
                         </div>
                         <div className="text-center">
                             <h1 className="uppercase text-lg lg:text-3xl">
-                                &#8220;for your space&#8221;
+                                {`We don’t just build spaces`}
+                                <br />
+                                {`we design the way you live.`}
                             </h1>
                         </div>
                     </Fade>
